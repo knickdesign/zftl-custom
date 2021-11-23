@@ -693,7 +693,8 @@ body.menu-open {
 
 .site-footer .footer-widget-1 h2 {
   text-align: center;
-  font-style: italic; }
+  font-style: italic;
+  margin-top: 2em; }
 
 .site-footer .footer-widget-1 .inner-padding {
   padding: 0;
