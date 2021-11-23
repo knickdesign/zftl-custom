@@ -1,25 +1,24 @@
-.btn, button {
-  border: 1px solid $color-purple;
-  background-color: $color-purple;
-  color: $color-blue-dark;
-  @include transition-all;
-  padding: 7px 15px 4px;
-  cursor: pointer;
-  text-align: center;
-  -webkit-appearance: none;
-  height: auto;
-  min-height: 35px;
-  border-radius: 24px;
-  width: auto;
-  display: table;
-
-  &:disabled,
-  &[disabled] {
-    opacity: 0.5;
-  }
-
-  &:hover {
-    background-color: $color-blue-dark;
-    color: $color-purple;
-  }
+.btn,
+button {
+    border: 1px solid $color-coral;
+    background-color: $color-coral;
+    color: $color-blue-dark;
+    @include transition-all;
+    padding: 7px 15px 4px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    height: auto;
+    min-height: 35px;
+    border-radius: 24px;
+    width: auto;
+    display: table;
+    &:disabled,
+    &[disabled] {
+        opacity: 0.5;
+    }
+    &:hover {
+        background-color: $color-blue-dark;
+        color: $color-coral;
+    }
 }

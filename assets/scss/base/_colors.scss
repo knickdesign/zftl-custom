@@ -1,63 +1,71 @@
-.text-white, .text-white:before {
-  color: $color-white;
+.text-white,
+.text-white:before {
+    color: $color-white;
 }
 
-.text-black, .text-black:before {
-  color: $color-black;
+.text-black,
+.text-black:before {
+    color: $color-black;
 }
 
-.text-grey, .text-grey:before {
-  color: $color-black;
+.text-grey,
+.text-grey:before {
+    color: $color-black;
 }
 
-.text-blue-dark, .text-blue-dark:before {
-  color: $color-blue-dark;
+.text-blue-dark,
+.text-blue-dark:before {
+    color: $color-blue-dark;
 }
 
-.text-blue-light, .text-blue-light:before {
-  color: $color-blue-light;
+.text-blue-light,
+.text-blue-light:before {
+    color: $color-blue-mid;
 }
 
-.text-purple, .text-purple:before {
-  color: $color-purple;
+.text-purple,
+.text-purple:before {
+    color: $color-coral;
 }
 
-.text-yellow, .text-yellow:before {
-  color: $color-yellow;
+.text-yellow,
+.text-yellow:before {
+    color: $color-turquoise;
 }
 
-.text-green, .text-green:before {
-  color: $color-green;
+.text-green,
+.text-green:before {
+    color: $color-turquoise;
 }
 
 .bg-white {
-  background-color: $color-white;
+    background-color: $color-white;
 }
 
 .bg-black {
-  background-color: $color-black;
+    background-color: $color-black;
 }
 
 .bg-grey {
-  background-color: $color-grey;
+    background-color: $color-grey;
 }
 
 .bg-blue-dark {
-  background-color: $color-blue-dark;
+    background-color: $color-blue-dark;
 }
 
 .bg-blue-light {
-  background-color: $color-blue-light;
+    background-color: $color-blue-mid;
 }
 
 .bg-purple {
-  background-color: $color-purple;
+    background-color: $color-coral;
 }
 
 .bg-yellow {
-  background-color: $color-yellow;
+    background-color: $color-turquoise;
 }
 
 .bg-green {
-  background-color: $color-green;
+    background-color: $color-turquoise;
 }

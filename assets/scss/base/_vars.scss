@@ -4,38 +4,29 @@ $breakpoint-sm-width: 560px;
 $breakpoint-m-width: 768px;
 $breakpoint-l-width: 1200px;
 $breakpoint-xl-width: 1920px;
-
 $breakpoints-max-diff: $breakpoint-xl-width - $breakpoint-s-width;
-
 // spacing
 $spacing1: 10px;
 $spacing2: 16px;
 $spacing3: 21px;
 $spacing4: 30px;
 $spacing5: 50px;
-
 // dimensions
 $wrapper-x-padding: 24px;
-
 $radius-left: 10px 0px 0px 10px;
 $radius-right:0px 10px 10px 0px;
 $radius: 10px 10px 10px 10px;
-
 $content-max-width: 1514px;
 $content-text-max-width: 1128px;
-
 // colors
 $color-black: #000000;
 $color-white: #FFFFFF;
 $color-grey: #E4E9F4;
 $color-grey-alt: #CCD5E8;
-
-$color-blue-dark: #012E57;
-$color-blue-light: #4065FF;
-$color-purple: #D7CCFF;
-$color-yellow: #FFBE0D;
-$color-green: #13F49D;
-
+$color-blue-dark: #1D3753;
+$color-blue-mid: #43667E;
+$color-coral: #EE907D;
+$color-turquoise: #13F49D;
 // font-size and line-height
 $text-font-size: 16px;
 $text-line-height: 22px;
@@ -43,21 +34,18 @@ $text-font-size-max: 24px;
 $text-line-height-max: 34px;
 $text-font-size-diff: $text-font-size-max - $text-font-size;
 $text-line-height-diff: $text-line-height-max - $text-line-height;
-
 $bigger-text-font-size: 20px;
 $bigger-text-line-height: 29px;
 $bigger-text-font-size-max: 33px;
 $bigger-text-line-height-max: 48px;
 $bigger-text-font-size-diff: $bigger-text-font-size-max - $bigger-text-font-size;
 $bigger-text-line-height-diff: $bigger-text-line-height-max - $bigger-text-line-height;
-
 $smaller-text-font-size: 13px;
 $smaller-text-line-height: 19px;
 $smaller-text-font-size-max: 20px;
 $smaller-text-line-height-max: 29px;
 $smaller-text-font-size-diff: $smaller-text-font-size-max - $smaller-text-font-size;
 $smaller-text-line-height-diff: $smaller-text-line-height-max - $smaller-text-line-height;
-
 $meta-text-font-size: 8px;
 $meta-text-line-height: 12px;
 $meta-text-font-size-max: 16px;
@@ -65,33 +53,28 @@ $meta-text-line-height-max: 22px;
 $meta-text-letter-spacing: 1.92px;
 $meta-text-font-size-diff: $meta-text-font-size-max - $meta-text-font-size;
 $meta-text-line-height-diff: $meta-text-line-height-max - $meta-text-line-height;
-
 $super-text-font-size: 60px;
 $super-text-line-height: 1;
 $super-text-font-size-max: 190px;
 $super-text-line-height-max: 1;
 $super-text-font-size-diff: $super-text-font-size-max - $super-text-font-size;
 $super-text-line-height-diff: $super-text-line-height-max - $super-text-line-height;
-
 $h1-font-size: 36px;
 $h1-line-height: 43px;
 $h1-font-size-max: 80px;
 $h1-line-height-max: 96px;
 $h1-font-size-diff: $h1-font-size-max - $h1-font-size;
 $h1-line-height-diff: $h1-line-height-max - $h1-line-height;
-
 $h2-font-size: 20px;
 $h2-line-height: 27px;
 $h2-font-size-max: 33px;
 $h2-line-height-max: 48px;
 $h2-font-size-diff: $h2-font-size-max - $h2-font-size;
 $h2-line-height-diff: $h2-line-height-max - $h2-line-height;
-
 $h3-font-size: 16px;
 $h3-line-height: 22px;
 $h3-font-size-max: 24px;
 $h3-line-height-max: 34px;
 $h3-font-size-diff: $h3-font-size-max - $h3-font-size;
 $h3-line-height-diff: $h3-line-height-max - $h3-line-height;
-
 // z-index
