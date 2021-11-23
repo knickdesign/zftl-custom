@@ -62,7 +62,6 @@
 @mixin text-meta() {
     font-size: $meta-text-font-size;
     line-height: $meta-text-line-height;
-    letter-spacing: $meta-text-letter-spacing;
     text-transform: uppercase;
     @media screen and (min-width: $breakpoint-s-width) {
         font-size: calc(#{$meta-text-font-size} + #{strip-unit($meta-text-font-size-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
@@ -122,6 +121,7 @@
 @mixin text-h3() {
     font-size: $h3-font-size;
     line-height: $h3-line-height;
+    letter-spacing: $h3-text-letter-spacing;
     display: block;
     @media screen and (min-width: $breakpoint-s-width) {
         font-size: calc(#{$h3-font-size} + #{strip-unit($h3-font-size-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
