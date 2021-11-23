@@ -1,0 +1,63 @@
+.text-white, .text-white:before {
+  color: $color-white;
+}
+
+.text-black, .text-black:before {
+  color: $color-black;
+}
+
+.text-grey, .text-grey:before {
+  color: $color-black;
+}
+
+.text-blue-dark, .text-blue-dark:before {
+  color: $color-blue-dark;
+}
+
+.text-blue-light, .text-blue-light:before {
+  color: $color-blue-light;
+}
+
+.text-purple, .text-purple:before {
+  color: $color-purple;
+}
+
+.text-yellow, .text-yellow:before {
+  color: $color-yellow;
+}
+
+.text-green, .text-green:before {
+  color: $color-green;
+}
+
+.bg-white {
+  background-color: $color-white;
+}
+
+.bg-black {
+  background-color: $color-black;
+}
+
+.bg-grey {
+  background-color: $color-grey;
+}
+
+.bg-blue-dark {
+  background-color: $color-blue-dark;
+}
+
+.bg-blue-light {
+  background-color: $color-blue-light;
+}
+
+.bg-purple {
+  background-color: $color-purple;
+}
+
+.bg-yellow {
+  background-color: $color-yellow;
+}
+
+.bg-green {
+  background-color: $color-green;
+}

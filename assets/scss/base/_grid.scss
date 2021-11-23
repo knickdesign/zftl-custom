@@ -1,0 +1,34 @@
+// Provides a bootstrap-like grid
+// Use as:
+// .col-sm-[1-12] -> Width on mobile
+// .offset-sm-[1-12] -> Offset (margin-left) on mobile
+// .col-md-[1-12] -> Width on tablet/desktop
+// .offset-md-[1-12] -> Offset (margin-left) on tablet/desktop
+@use "sass:math";
+.row {
+    display: flex;
+    flex-flow: wrap; // Auto-break
+    &--expanded {
+        width: 100%;
+    }
+}
+
+@for $i from 1 to 13 {
+    .col-sm-#{$i} {
+        width: (100% / 12) * $i;
+    }
+    .offset-sm-#{$i} {
+        margin-left: (100% / 12) * $i;
+    }
+}
+
+@media screen and (min-width: $breakpoint-m-width) {
+    @for $i from 1 to 13 {
+        .col-md-#{$i} {
+            width: (100% / 12) * $i;
+        }
+        .offset-md-#{$i} {
+            margin-left: (100% / 12) * $i;
+        }
+    }
+}

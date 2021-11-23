@@ -1,0 +1,223 @@
+@mixin transition-all($duration: 0.2s) {
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+}
+
+@mixin transition($property, $duration: 0.2s) {
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+
+  -webkit-transition-property: $property;
+  -moz-transition-property: $property;
+  -o-transition-property: $property;
+  transition-property: $property;
+}
+
+@mixin text-regular() {
+  font-size: $text-font-size;
+  line-height: $text-line-height;
+
+  @media screen and (min-width: $breakpoint-s-width) {
+    font-size: calc(#{$text-font-size} + #{strip-unit($text-font-size-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+    line-height: calc(#{$text-line-height} + #{strip-unit($text-line-height-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+  }
+
+  @media screen and (min-width: $breakpoint-xl-width) {
+    font-size: $text-font-size-max;
+    line-height: $text-line-height-max;
+  }
+}
+
+@mixin text-smaller() {
+  font-size: $smaller-text-font-size;
+  line-height: $smaller-text-line-height;
+
+  @media screen and (min-width: $breakpoint-s-width) {
+    font-size: calc(#{$smaller-text-font-size} + #{strip-unit($smaller-text-font-size-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+    line-height: calc(#{$smaller-text-line-height} + #{strip-unit($smaller-text-line-height-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+  }
+
+  @media screen and (min-width: $breakpoint-xl-width) {
+    font-size: $smaller-text-font-size-max;
+    line-height: $smaller-text-line-height-max;
+  }
+}
+
+@mixin text-bigger() {
+  font-size: $bigger-text-font-size;
+  line-height: $bigger-text-line-height;
+
+  @media screen and (min-width: $breakpoint-s-width) {
+    font-size: calc(#{$bigger-text-font-size} + #{strip-unit($bigger-text-font-size-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+    line-height: calc(#{$bigger-text-line-height} + #{strip-unit($bigger-text-line-height-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+  }
+
+  @media screen and (min-width: $breakpoint-xl-width) {
+    font-size: $bigger-text-font-size-max;
+    line-height: $bigger-text-line-height-max;
+  }
+}
+
+@mixin text-meta() {
+  font-size: $meta-text-font-size;
+  line-height: $meta-text-line-height;
+  letter-spacing: $meta-text-letter-spacing;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $breakpoint-s-width) {
+    font-size: calc(#{$meta-text-font-size} + #{strip-unit($meta-text-font-size-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+    line-height: calc(#{$meta-text-line-height} + #{strip-unit($meta-text-line-height-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+  }
+
+  @media screen and (min-width: $breakpoint-xl-width) {
+    font-size: $meta-text-font-size-max;
+    line-height: $meta-text-line-height-max;
+  }
+}
+
+@mixin text-super() {
+  font-size: $super-text-font-size;
+  line-height: $super-text-line-height;
+
+  @media screen and (min-width: $breakpoint-s-width) {
+    font-size: calc(#{$super-text-font-size} + #{strip-unit($super-text-font-size-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+    line-height: calc(#{$super-text-line-height} + #{strip-unit($super-text-line-height-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+  }
+
+  @media screen and (min-width: $breakpoint-xl-width) {
+    font-size: $super-text-font-size-max;
+    line-height: $super-text-line-height-max;
+  }
+}
+
+@mixin text-h1() {
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+  margin-bottom: 6vw;
+  display: block;
+
+  @media screen and (min-width: $breakpoint-s-width) {
+    font-size: calc(#{$h1-font-size} + #{strip-unit($h1-font-size-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+    line-height: calc(#{$h1-line-height} + #{strip-unit($h1-line-height-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+  }
+
+  @media screen and (min-width: $breakpoint-xl-width) {
+    font-size: $h1-font-size-max;
+    line-height: $h1-line-height-max;
+    margin-bottom: 100px;
+  }
+}
+
+@mixin text-h2() {
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
+  margin-bottom: 1.5vw;
+  display: block;
+
+  @media screen and (min-width: $breakpoint-s-width) {
+    font-size: calc(#{$h2-font-size} + #{strip-unit($h2-font-size-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+    line-height: calc(#{$h2-line-height} + #{strip-unit($h2-line-height-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+  }
+
+  @media screen and (min-width: $breakpoint-xl-width) {
+    font-size: $h2-font-size-max;
+    line-height: $h2-line-height-max;
+    margin-bottom: 35px;
+  }
+}
+
+@mixin text-h3() {
+  font-size: $h3-font-size;
+  line-height: $h3-line-height;
+  display: block;
+
+  @media screen and (min-width: $breakpoint-s-width) {
+    font-size: calc(#{$h3-font-size} + #{strip-unit($h3-font-size-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+    line-height: calc(#{$h3-line-height} + #{strip-unit($h3-line-height-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+  }
+
+  @media screen and (min-width: $breakpoint-xl-width) {
+    font-size: $h3-font-size-max;
+    line-height: $h3-line-height-max;
+  }
+}
+
+@mixin border-radius() {
+  border-radius: 26px;
+
+  @media screen and (min-width: $breakpoint-s-width) {
+    border-radius: calc(26px + 40 * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+  }
+
+  @media screen and (min-width: $breakpoint-xl-width) {
+    border-radius: 66px;
+  }
+}
+
+@mixin font-text-regular() {
+  font-family: "Silka", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-text-bold() {
+  font-family: "Silka", Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin font-icon() {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-variant: normal;
+  text-rendering: auto;
+  font-weight: 900;
+}
+
+@mixin text-icon-regular() {
+  font-size: 14px;
+  line-height: 1;
+}
+
+@mixin text-icon-bigger() {
+  font-size: 20px;
+  line-height: 1;
+}
+
+@mixin text-overflow-ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin styled-scrollbars() {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-blue-dark;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: $color-blue-light;
+  }
+}

@@ -1,0 +1,83 @@
+div, p, span, em, i, li, td, address, a {
+  @include font-text-regular;
+  @include text-regular;
+  color: $color-blue-dark;
+}
+
+strong, b, th, .strong, .bold, button, .btn,
+label, input, textarea, select {
+  @include font-text-bold;
+  @include text-regular;
+  color: $color-blue-dark;
+}
+
+h1, .h1 {
+  @include font-text-bold;
+  @include text-h1;
+  color: $color-blue-dark;
+}
+
+h2, .h2 {
+  @include font-text-bold;
+  @include text-h2;
+  margin-bottom: $spacing2;
+  color: $color-blue-dark;
+}
+
+h3, .h3 {
+  @include font-text-bold;
+  @include text-h3;
+  margin-bottom: $spacing2;
+  color: $color-blue-dark;
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  @include font-text-bold;
+  @include text-regular;
+  margin-bottom: $spacing2;
+  color: $color-blue-dark;
+}
+
+p {
+  margin: $spacing2 0;
+  max-width: $content-text-max-width;
+}
+
+ol, ul {
+  padding-left: 1em;
+  margin: $spacing2 0;
+}
+
+.text-smaller {
+  @include text-smaller;
+}
+
+.text-bigger {
+  @include text-bigger;
+}
+
+.text-super {
+  @include text-super;
+}
+
+.text-meta {
+  @include text-meta;
+}
+
+.font-regular {
+  @include font-text-regular;
+}
+
+.font-text-bold {
+  @include font-text-bold;
+}
+
+a {
+  @include transition-all;
+}
+
+a, a:active, a:focus, a:visited, a:hover {
+  text-decoration: none;
+}
