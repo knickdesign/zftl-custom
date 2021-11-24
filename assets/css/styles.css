@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @use "sass:math";
 .text-white,
 .text-white:before {
@@ -478,6 +479,13 @@ a:visited,
 a:hover {
   text-decoration: none; }
 
+a:active,
+a:focus,
+a:hover {
+  font-family: "Exo 2", Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal; }
+
 *,
 div,
 :after,
@@ -683,6 +691,13 @@ body.menu-open {
 @media screen and (max-width: 375px) {
   .show-for-mobile {
     display: block; } }
+
+.site-footer #footer-widgets {
+  margin-top: 7vw;
+  padding-bottom: 7vw; }
+
+.site-footer #footer-widgets::before {
+  content: url("../img/zftpl_hintergrunde/blau_gruen_weiß_v2.svg"); }
 
 .site-footer ul.menu {
   padding-left: 0; }
