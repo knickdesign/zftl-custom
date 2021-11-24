@@ -718,6 +718,31 @@ body.menu-open {
 .site-footer .footer-widget-2 .wp-block-columns {
   margin-bottom: 6rem; }
 
+header.site-header {
+  position: sticky;
+  top: 30px;
+  background-color: transparent !important; }
+  header.site-header.has-inline-mobile-toggle .inside-header {
+    flex-direction: column-reverse;
+    align-content: flex-end; }
+    header.site-header.has-inline-mobile-toggle .inside-header div.site-branding {
+      transform: rotate(90deg);
+      position: absolute;
+      right: -94px;
+      top: 230px; }
+      header.site-header.has-inline-mobile-toggle .inside-header div.site-branding * {
+        color: #8BC0B6;
+        font-family: "Exo 2", Arial, sans-serif;
+        font-weight: bold;
+        font-style: normal; }
+  header.site-header button.menu-toggle {
+    border-radius: 0;
+    background-color: #FFFFFF !important;
+    padding-top: 17px;
+    max-height: 60px; }
+  header.site-header div.inside-header {
+    padding: 20px 20px; }
+
 .btn,
 button {
   border: 1px solid #EE907D;

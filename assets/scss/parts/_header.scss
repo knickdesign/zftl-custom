@@ -1,0 +1,28 @@
+header.site-header {
+    position: sticky;
+    top: 30px;
+    background-color: transparent!important;
+    &.has-inline-mobile-toggle .inside-header {
+        flex-direction: column-reverse;
+        align-content: flex-end;
+        div.site-branding {
+            transform: rotate(90deg);
+            position: absolute;
+            right: -94px;
+            top: 230px;
+            * {
+                color: $color-turquoise;
+                @include font-text-bold;
+            }
+        }
+    }
+    button.menu-toggle {
+        border-radius: 0;
+        background-color: #FFFFFF!important;
+        padding-top: 17px;
+        max-height: 60px;
+    }
+    div.inside-header {
+        padding: 20px 20px;
+    }
+}
