@@ -721,11 +721,13 @@ body.menu-open {
 header.site-header {
   position: sticky;
   top: 30px;
-  background-color: transparent !important; }
+  background-color: transparent !important;
+  z-index: 9999; }
   header.site-header.has-inline-mobile-toggle .inside-header {
     flex-direction: column-reverse;
     align-content: flex-end; }
     header.site-header.has-inline-mobile-toggle .inside-header div.site-branding {
+      z-index: 9999999999;
       transform: rotate(90deg);
       position: absolute;
       right: -94px;
@@ -735,13 +737,66 @@ header.site-header {
         font-family: "Exo 2", Arial, sans-serif;
         font-weight: bold;
         font-style: normal; }
+  header.site-header.has-inline-mobile-toggle #site-navigation .inside-navigation > *:not(.navigation-search):not(.main-nav) {
+    display: block !important; }
   header.site-header button.menu-toggle {
     border-radius: 0;
     background-color: #FFFFFF !important;
     padding-top: 17px;
-    max-height: 60px; }
+    max-height: 60px;
+    z-index: 9999999999; }
+  header.site-header .toggled button.menu-toggle {
+    background-color: transparent !important; }
+    header.site-header .toggled button.menu-toggle .gp-icon svg {
+      fill: #EE907D; }
+  header.site-header div.inside-navigation {
+    position: static; }
   header.site-header div.inside-header {
     padding: 20px 20px; }
+  header.site-header .toggled div#primary-menu {
+    z-index: 999999999;
+    position: absolute;
+    background-color: #1D3753;
+    width: 50vw;
+    height: 100vh;
+    right: 0;
+    top: -29px; }
+  header.site-header #mobile-menu-control-wrapper {
+    display: none !important; }
+  header.site-header.has-inline-mobile-toggle #site-navigation.toggled {
+    margin-top: 0; }
+  header.site-header ul#menu-main {
+    width: 50%;
+    margin-left: 20px;
+    margin-top: 100px; }
+    header.site-header ul#menu-main * {
+      color: white; }
+    header.site-header ul#menu-main li {
+      border-bottom: 1px solid #8BC0B6;
+      margin-bottom: 50px;
+      text-align: right; }
+      header.site-header ul#menu-main li a {
+        line-height: 45px;
+        font-family: "Exo 2", Arial, sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        padding: 0;
+        font-size: 22px; }
+        header.site-header ul#menu-main li a:hover, header.site-header ul#menu-main li a:active, header.site-header ul#menu-main li a:focus {
+          color: #8BC0B6; }
+  header.site-header .toggled #primary-menu::after {
+    content: '';
+    background-image: url("../img/zftl-logo-clean-white.svg");
+    background-size: 50%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: calc(50% - 120px);
+    height: 100%;
+    margin-top: 200px; }
+  header.site-header .toggled ul#menu-main {
+    display: inline-block;
+    margin-right: 20px; }
 
 .btn,
 button {

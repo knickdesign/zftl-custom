@@ -2,10 +2,12 @@ header.site-header {
     position: sticky;
     top: 30px;
     background-color: transparent!important;
+    z-index: 9999;
     &.has-inline-mobile-toggle .inside-header {
         flex-direction: column-reverse;
         align-content: flex-end;
         div.site-branding {
+            z-index: 9999999999;
             transform: rotate(90deg);
             position: absolute;
             right: -94px;
@@ -16,13 +18,82 @@ header.site-header {
             }
         }
     }
+    &.has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+        display: block!important;
+    }
     button.menu-toggle {
         border-radius: 0;
         background-color: #FFFFFF!important;
         padding-top: 17px;
         max-height: 60px;
+        z-index: 9999999999;
+    }
+    .toggled button.menu-toggle {
+        background-color: transparent!important;
+        .gp-icon svg {
+            fill: $color-coral;
+        }
+    }
+    div.inside-navigation {
+        position: static;
     }
     div.inside-header {
         padding: 20px 20px;
+    }
+    .toggled div#primary-menu {
+        z-index: 999999999;
+        position: absolute;
+        background-color: $color-blue-dark;
+        width: 50vw;
+        height: 100vh;
+        right: 0;
+        top: -29px;
+    }
+    #mobile-menu-control-wrapper {
+        display: none!important;
+    }
+    &.has-inline-mobile-toggle #site-navigation.toggled {
+        margin-top: 0;
+    }
+    ul#menu-main {
+        width: 50%;
+        margin-left: 20px;
+        margin-top: 100px;
+        * {
+            color: white;
+        }
+        li {
+            border-bottom: 1px solid $color-turquoise;
+            margin-bottom: 50px;
+            text-align: right;
+            a {
+                line-height: 45px;
+                @include font-text-bold;
+                padding: 0;
+                font-size: 22px;
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $color-turquoise;
+                }
+            }
+        }
+    }
+    .toggled {
+        #primary-menu::after {
+            content: '';
+            background-image: url("../img/zftl-logo-clean-white.svg");
+            background-size: 50%;
+            background-position: top center;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: calc(50% - 120px);
+            height: 100%;
+            margin-top: 200px;
+        }
+        ul#menu-main {
+            display: inline-block;
+            margin-right: 20px;
+        }
     }
 }
