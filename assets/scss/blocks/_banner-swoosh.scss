@@ -1,0 +1,36 @@
+.banner-background--blue {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: $color-blue-dark;
+    width: 100vw;
+    position: relative;
+    right: calc((100vw - 100%) / 2);
+    .banner-background--blue__inner {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        padding: 40px;
+    }
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: white;
+    }
+    .text-super {
+        color: $color-turquoise;
+    }
+}
+
+.swoosh {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+        transform: scale(1.01);
+    }
+}

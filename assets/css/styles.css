@@ -340,15 +340,24 @@ h2,
 
 h3,
 .h3 {
-  font-family: "Exo 2", Arial, sans-serif;
-  font-weight: bold;
-  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 1.92px;
   display: block;
   margin-bottom: 16px;
   color: #1D3753; }
+  @media screen and (min-width: 375px) {
+    h3,
+    .h3 {
+      font-size: calc(20px + 0 * ((100vw - 375px) / 1545));
+      line-height: calc(28px + 0 * ((100vw - 375px) / 1545)); } }
+  @media screen and (min-width: 1920px) {
+    h3,
+    .h3 {
+      font-size: 20px;
+      line-height: 28px; } }
   @media screen and (min-width: 375px) {
     h3,
     .h3 {
@@ -394,7 +403,7 @@ h6,
 
 p {
   margin: 16px 0;
-  max-width: 1128px; }
+  max-width: 952px; }
 
 ol,
 ul {
@@ -429,7 +438,9 @@ ul {
   font-size: 60px;
   line-height: 80px;
   color: #8BC0B6;
-  font-style: italic; }
+  font-weight: 900;
+  font-style: italic;
+  max-width: 952px; }
   @media screen and (min-width: 375px) {
     .text-super {
       font-size: calc(60px + 30 * ((100vw - 375px) / 1545));
@@ -697,7 +708,7 @@ body.menu-open {
   padding-bottom: 7vw; }
 
 .site-footer #footer-widgets::before {
-  content: url("../img/zftpl_hintergrunde/blau_gruen_weiß_v2.svg"); }
+  content: url("../img/zftpl_hintergrunde/blau_gruen_weiß_v5.svg"); }
 
 .site-footer ul.menu {
   padding-left: 0; }
@@ -800,10 +811,14 @@ header.site-header {
     margin-right: 20px; }
 
 .btn,
-button {
-  border: 1px solid #EE907D;
-  background-color: #EE907D;
-  color: #1D3753;
+button,
+.wp-block-buttons a.wp-block-button__link {
+  border: 3px solid #8BC0B6;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-family: "Exo 2", Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
@@ -812,7 +827,7 @@ button {
   -moz-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
-  padding: 7px 15px 4px;
+  padding: 5px 15px 7px;
   cursor: pointer;
   text-align: center;
   -webkit-appearance: none;
@@ -823,9 +838,43 @@ button {
   display: table; }
   .btn:disabled, .btn[disabled],
   button:disabled,
-  button[disabled] {
+  button[disabled],
+  .wp-block-buttons a.wp-block-button__link:disabled,
+  .wp-block-buttons a.wp-block-button__link[disabled] {
     opacity: 0.5; }
   .btn:hover,
-  button:hover {
-    background-color: #1D3753;
-    color: #EE907D; }
+  button:hover,
+  .wp-block-buttons a.wp-block-button__link:hover {
+    background-color: transparent;
+    color: #8BC0B6; }
+
+.banner-background--blue {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: #1D3753;
+  width: 100vw;
+  position: relative;
+  right: calc((100vw - 100%) / 2); }
+  .banner-background--blue .banner-background--blue__inner {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    padding: 40px; }
+  .banner-background--blue p,
+  .banner-background--blue h1,
+  .banner-background--blue h2,
+  .banner-background--blue h3,
+  .banner-background--blue h4,
+  .banner-background--blue h5,
+  .banner-background--blue h6 {
+    color: white; }
+  .banner-background--blue .text-super {
+    color: #8BC0B6; }
+
+.swoosh {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  .swoosh img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.01); }

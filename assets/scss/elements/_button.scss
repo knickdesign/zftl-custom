@@ -1,10 +1,12 @@
 .btn,
-button {
-    border: 1px solid $color-coral;
-    background-color: $color-coral;
-    color: $color-blue-dark;
+button,
+.wp-block-buttons a.wp-block-button__link {
+    border: 3px solid $color-turquoise;
+    background-color: transparent;
+    color: $color-white;
+    @include font-text-bold;
     @include transition-all;
-    padding: 7px 15px 4px;
+    padding: 5px 15px 7px;
     cursor: pointer;
     text-align: center;
     -webkit-appearance: none;
@@ -18,7 +20,7 @@ button {
         opacity: 0.5;
     }
     &:hover {
-        background-color: $color-blue-dark;
-        color: $color-coral;
+        background-color: transparent;
+        color: $color-turquoise;
     }
 }

@@ -45,7 +45,7 @@ h2,
 
 h3,
 .h3 {
-    @include font-text-bold;
+    @include text-regular;
     @include text-h3;
     margin-bottom: $spacing2;
     color: $color-blue-dark;
@@ -85,7 +85,9 @@ ul {
 .text-super {
     @include text-super;
     color: $color-turquoise;
+    font-weight: 900;
     font-style: italic;
+    max-width: $content-text-max-width;
 }
 
 .text-meta {
