@@ -74,6 +74,12 @@ ul {
     margin: $spacing2 0;
 }
 
+.h1-subline {
+    @include text-h1;
+    margin-bottom: $spacing2;
+    color: $color-blue-dark;
+}
+
 .text-smaller {
     @include text-smaller;
 }

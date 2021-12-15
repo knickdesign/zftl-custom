@@ -98,3 +98,12 @@ header.site-header {
         }
     }
 }
+
+.subpage-header{
+    display: flex;
+    flex: 1 1 0%;
+    align-items: center;
+    .subpage-header__txt-container{
+        padding-right: 10px;
+    }
+}

@@ -86,3 +86,7 @@ img.avatar {
     width: 1px !important;
     white-space: nowrap !important;
 }
+
+header.site-header+div.featured-image.page-header-image.grid-container.grid-parent {
+    display: none;
+}

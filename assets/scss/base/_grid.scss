@@ -15,20 +15,25 @@
 
 @for $i from 1 to 13 {
     .col-sm-#{$i} {
-        width: (100% / 12) * $i;
+        width: math.div(100%, 12) * $i;
     }
     .offset-sm-#{$i} {
-        margin-left: (100% / 12) * $i;
+        margin-left: math.div(100%, 12) * $i;
     }
 }
 
 @media screen and (min-width: $breakpoint-m-width) {
     @for $i from 1 to 13 {
         .col-md-#{$i} {
-            width: (100% / 12) * $i;
+            width: math.div(100%, 12) * $i;
         }
         .offset-md-#{$i} {
-            margin-left: (100% / 12) * $i;
+            margin-left: math.div(100%, 12) * $i;
         }
     }
+}
+
+.separate-containers .comments-area, .separate-containers .inside-article, .separate-containers .page-header, .separate-containers .paging-navigation{
+    padding-left: 100px;
+    padding-right: 100px;
 }
