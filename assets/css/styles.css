@@ -1066,7 +1066,7 @@ header.site-header .toggled ul#menu-main {
 }
 
 .subpage-header {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   display: flex;
   flex: 1 1 0%;
   align-items: center;
@@ -1151,6 +1151,26 @@ button:hover,
   width: 100%;
   height: auto;
   transform: scale(1.01);
+}
+
+.testimonial .testimonial__txt-wrapper {
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.testimonial .testimonial__txt-wrapper .testimonial__txt-wrapper__inner {
+  width: 50%;
+}
+.testimonial .testimonial__img-wrapper {
+  margin-top: 10%;
+  width: 100%;
+}
+.testimonial .testimonial__img-wrapper .testimonial__img-wrapper__inner {
+  width: 50%;
+  margin-left: 10%;
+  margin-top: -20%;
 }
 
 /*# sourceMappingURL=styles.css.map */

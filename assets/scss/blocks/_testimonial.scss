@@ -1,0 +1,22 @@
+.testimonial{
+    .testimonial__txt-wrapper{
+        z-index: 5;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        .testimonial__txt-wrapper__inner{
+            width: 50%;
+        }
+    }
+    .testimonial__img-wrapper{
+        margin-top: 10%;
+        width: 100%;
+        .testimonial__img-wrapper__inner{
+            width: 50%;
+            margin-left: 10%;
+            margin-top: -20%;
+        }
+        
+    }
+}
