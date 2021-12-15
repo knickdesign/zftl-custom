@@ -8,10 +8,16 @@
  */
 
 ?>
+
+<?php
+$testimonial_image = $attributes['testimonial-img'];
+$testimonial_image_url = $testimonial_image['url'];
+?>
+
 <div class="testimonial">
     
     <?php echo ( $attributes['testimonial-name'] ); ?>
-    <?php echo ( $attributes['testimonial-quote'] ); ?>
-    <?php echo ( $attributes['testimonial-img'] ); ?>
+    <h2 class="text-super"><?php echo ( $attributes['testimonial-quote'] ); ?></h2>
+    <img class="" src="<?php echo $testimonial_image_url ?>">
     
 </div>
