@@ -3,6 +3,10 @@
         margin-top: 7vw;
         padding-bottom: 7vw;
     }
+    .footer-widgets-container{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
     #footer-widgets::before {
         content: url("../img/zftpl_hintergrunde/blau_gruen_weiß_v5.svg");
     }

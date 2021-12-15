@@ -37,3 +37,11 @@
     padding-left: 100px;
     padding-right: 100px;
 }
+
+.inner-container-small{
+    max-width: 1070px;
+    margin: 0 auto;
+    .wp-block-column:not(:first-child){
+        margin-left: 15%;
+    }
+}
