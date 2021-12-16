@@ -1,47 +1,55 @@
-// Provides a bootstrap-like grid
-// Use as:
-// .col-sm-[1-12] -> Width on mobile
-// .offset-sm-[1-12] -> Offset (margin-left) on mobile
-// .col-md-[1-12] -> Width on tablet/desktop
-// .offset-md-[1-12] -> Offset (margin-left) on tablet/desktop
-@use "sass:math";
-.row {
-    display: flex;
-    flex-flow: wrap; // Auto-break
-    &--expanded {
-        width: 100%;
-    }
-}
-
-@for $i from 1 to 13 {
-    .col-sm-#{$i} {
-        width: math.div(100%, 12) * $i;
-    }
-    .offset-sm-#{$i} {
-        margin-left: math.div(100%, 12) * $i;
-    }
-}
-
-@media screen and (min-width: $breakpoint-m-width) {
-    @for $i from 1 to 13 {
-        .col-md-#{$i} {
-            width: math.div(100%, 12) * $i;
+        // Provides a bootstrap-like grid
+        // Use as:
+        // .col-sm-[1-12] -> Width on mobile
+        // .offset-sm-[1-12] -> Offset (margin-left) on mobile
+        // .col-md-[1-12] -> Width on tablet/desktop
+        // .offset-md-[1-12] -> Offset (margin-left) on tablet/desktop
+        @use "sass:math";
+        .row {
+            display: flex;
+            flex-flow: wrap; // Auto-break
+            &--expanded {
+                width: 100%;
+            }
         }
-        .offset-md-#{$i} {
-            margin-left: math.div(100%, 12) * $i;
+        
+        @for $i from 1 to 13 {
+            .col-sm-#{$i} {
+                width: math.div(100%, 12) * $i;
+            }
+            .offset-sm-#{$i} {
+                margin-left: math.div(100%, 12) * $i;
+            }
         }
-    }
-}
-
-.separate-containers .comments-area, .separate-containers .inside-article, .separate-containers .page-header, .separate-containers .paging-navigation{
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.inner-container-small{
-    max-width: 1070px;
-    margin: 0 auto;
-    .wp-block-column:not(:first-child){
-        margin-left: 15%;
-    }
-}
+        
+        @media screen and (min-width: $breakpoint-m-width) {
+            @for $i from 1 to 13 {
+                .col-md-#{$i} {
+                    width: math.div(100%, 12) * $i;
+                }
+                .offset-md-#{$i} {
+                    margin-left: math.div(100%, 12) * $i;
+                }
+            }
+        }
+        
+        .separate-containers .comments-area,
+        .separate-containers .inside-article,
+        .separate-containers .page-header,
+        .separate-containers .paging-navigation {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        
+        .inner-container {
+            margin: 0 auto;
+            &--small {
+                max-width: 1070px;
+                .wp-block-column:not(:first-child) {
+                    margin-left: 15%;
+                }
+            }
+            &--medium {
+                max-width: 1350px;
+            }
+        }

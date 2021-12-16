@@ -86,6 +86,19 @@
     }
 }
 
+@mixin text-super-small() {
+    font-size: $super-small-text-font-size;
+    line-height: $super-small-text-line-height;
+    @media screen and (min-width: $breakpoint-s-width) {
+        font-size: calc(#{$super-small-text-font-size} + #{strip-unit($super-small-text-font-size-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+        line-height: calc(#{$super-small-text-line-height} + #{strip-unit($super-small-text-line-height-diff)} * ((100vw - #{$breakpoint-s-width}) / #{strip-unit($breakpoints-max-diff)}));
+    }
+    @media screen and (min-width: $breakpoint-xl-width) {
+        font-size: $super-small-text-font-size-max;
+        line-height: $super-small-text-line-height-max;
+    }
+}
+
 @mixin text-h1() {
     font-size: $h1-font-size;
     line-height: $h1-line-height;

@@ -14,7 +14,7 @@ function my_theme_enqueue_styles() {
 }
 // Disable the core template part on the blog page.
 add_filter( 'generate_do_template_part', function( $do ) {
-    if ( !is_front_page('team') ) {
+    if ( is_page('team') ) {
         return false;
     }
     return $do;
@@ -22,7 +22,7 @@ add_filter( 'generate_do_template_part', function( $do ) {
 
 // Add our own.
 add_action( 'generate_before_do_template_part', function() {
-    if ( !is_front_page('team') ) : ?>
+    if ( is_page('team') ) : ?>
         <?php get_template_part( 'content-page', 'team' );?>
     <?php endif;
 } );

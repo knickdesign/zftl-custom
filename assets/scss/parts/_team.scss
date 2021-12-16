@@ -1,0 +1,49 @@
+.team__mitglied {
+    >.flex {
+        flex: 1 1 0%;
+    }
+    .team__mitglied__txt-wrapper,
+    .team__mitglied__img-wrapper {
+        width: 50%;
+    }
+    .team__mitglied__img-wrapper {
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+        .team__mitglied__img-wrapper__txt {
+            width: 50%;
+            height: fit-content;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            align-self: center;
+            p:last-child {
+                margin-top: 32px;
+            }
+        }
+    }
+    p.team-title {
+        @include font-text-bold;
+    }
+}
+
+.team__mitglied:nth-child(even) {
+    >.flex {
+        flex-direction: row-reverse;
+    }
+    .team__mitglied__img-wrapper {
+        margin-left: 16px;
+    }
+    .team__mitglied__txt-wrapper {
+        margin-right: 16px;
+    }
+}
+
+.team__mitglied:nth-child(odd) {
+    .team__mitglied__img-wrapper {
+        margin-right: 16px;
+    }
+    .team__mitglied__txt-wrapper {
+        margin-left: 16px;
+    }
+}

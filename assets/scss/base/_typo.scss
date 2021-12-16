@@ -96,6 +96,10 @@ ul {
     max-width: $content-text-max-width;
 }
 
+.text-super.text-super-small {
+    @include text-super-small;
+}
+
 .text-meta {
     @include text-meta;
 }

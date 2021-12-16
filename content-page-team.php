@@ -1,16 +1,17 @@
 <?php
+
 /**
  * The template used for displaying page content in page-team.php
  *
  * @package GeneratePress
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php generate_do_microdata( 'article' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> <?php generate_do_microdata('article'); ?>>
 	<div class="inside-article">
 		<?php
 		/**
@@ -20,47 +21,47 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 *
 		 * @hooked generate_featured_page_header_inside_single - 10
 		 */
-		do_action( 'generate_before_content' );
+		do_action('generate_before_content');
 
-		if ( generate_show_entry_header() ) :
-			?>
+		if (generate_show_entry_header()) :
+		?>
 
-			<header <?php generate_do_attr( 'entry-header' ); ?>>
+			<header <?php generate_do_attr('entry-header'); ?>>
 				<?php
 				/**
 				 * generate_before_page_title hook.
 				 *
 				 * @since 2.4
 				 */
-				do_action( 'generate_before_page_title' );
+				do_action('generate_before_page_title');
 
-				if ( generate_show_title() ) {
-					?>
+				if (generate_show_title()) {
+				?>
 					<div class="subpage-header">
-					<div class="subpage-header__txt-container">
-						<?php
-					$params = generate_get_the_title_parameters();
+						<div class="subpage-header__txt-container">
+							<?php
+							$params = generate_get_the_title_parameters();
 
-					the_title( $params['before'], $params['after'] );
-					?>
-					<p class="h1-subline">
-						<?php
-							echo get_field('slogan');
-						?>
-					</p>
+							the_title($params['before'], $params['after']);
+							?>
+							<p class="h1-subline">
+								<?php
+								echo get_field('slogan');
+								?>
+							</p>
+						</div>
+						<div class="subpage-header__featured-img-container">
+							<div class="featured-image <?php echo esc_attr($class); ?> grid-container grid-parent">
+								<?php
+								the_post_thumbnail(
+									apply_filters('generate_page_header_default_size', 'full'),
+									$attrs
+								);
+								?>
+							</div>
+						</div>
 					</div>
-					<div class="subpage-header__featured-img-container">
-					<div class="featured-image <?php echo esc_attr( $class ); ?> grid-container grid-parent">
-			<?php
-				the_post_thumbnail(
-					apply_filters( 'generate_page_header_default_size', 'full' ),
-					$attrs
-				);
-			?>
-		</div>
-					</div>
-					</div>
-					<?php
+				<?php
 				}
 
 
@@ -69,11 +70,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 				 *
 				 * @since 2.4
 				 */
-				do_action( 'generate_after_page_title' );
+				do_action('generate_after_page_title');
 				?>
 			</header>
 
-			<?php
+		<?php
 		endif;
 
 		/**
@@ -83,42 +84,37 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 *
 		 * @hooked generate_post_image - 10
 		 */
-		do_action( 'generate_after_entry_header' );
+		do_action('generate_after_entry_header');
 
 		$itemprop = '';
 
-		if ( 'microdata' === generate_get_schema_type() ) {
+		if ('microdata' === generate_get_schema_type()) {
 			$itemprop = ' itemprop="text"';
 		}
 		?>
 
-		<div class="entry-content"<?php echo $itemprop; // phpcs:ignore -- No escaping needed. ?>>
+		<div class="entry-content" <?php echo $itemprop; // phpcs:ignore -- No escaping needed. 
+									?>>
+
+
+			<!-- BEGIN CUSTOM CONTENT -->
 			<?php
 			// the query
-$team_query = new WP_Query(array('post_type'=>'teammitglieder')); ?>
- 
-<?php if ( $team_query->have_posts() ) : ?>
- 
-<ul>
- 
-    <!-- the loop -->
-    <?php while ( $team_query->have_posts() ) : $team_query->the_post(); ?>
-        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-    <?php endwhile; ?>
-    <!-- end of the loop -->
- 
-</ul>
- 
-    <?php wp_reset_postdata(); ?>
- 
-<?php else : ?>
-    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; 
+			$team_query = new WP_Query(array('post_type' => 'teammitglieder')); ?>
 
+			<?php if ($team_query->have_posts()) : 
 
-			wp_link_pages(
+	include 'assets/parts/team-member.php';
+
+			else : ?>
+				<p><?php _e('Sorry, wir konnten leider nichts finden :('); ?></p>
+			<?php endif; ?>
+
+			<!-- BEGIN CUSTOM CONTENT -->
+
+			<?php wp_link_pages(
 				array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'generatepress' ),
+					'before' => '<div class="page-links">' . __('Pages:', 'generatepress'),
 					'after'  => '</div>',
 				)
 			);
@@ -131,7 +127,7 @@ $team_query = new WP_Query(array('post_type'=>'teammitglieder')); ?>
 		 *
 		 * @since 0.1
 		 */
-		do_action( 'generate_after_content' );
+		do_action('generate_after_content');
 		?>
 	</div>
 </article>
