@@ -1,7 +1,13 @@
 <?php
 /**
- * Template Name: Team
+ * The template for displaying all pages.
  *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
+ *
+ * @package GeneratePress
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -20,27 +26,15 @@ get_header(); ?>
 			 */
 			do_action( 'generate_before_main_content' );
 
+			if ( generate_has_default_loop() ) {
+				while ( have_posts() ) :
 
-// the query
-$team_query = new WP_Query(array('post_type'=>'teammitglieder')); ?>
- 
-<?php if ( $team_query->have_posts() ) : ?>
- 
-<ul>
- 
-    <!-- the loop -->
-    <?php while ( $team_query->have_posts() ) : $team_query->the_post(); ?>
-        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-    <?php endwhile; ?>
-    <!-- end of the loop -->
- 
-</ul>
- 
-    <?php wp_reset_postdata(); ?>
- 
-<?php else : ?>
-    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; 
+					the_post();
+
+					generate_do_template_part( 'page' );
+
+				endwhile;
+			}
 
 			/**
 			 * generate_after_main_content hook.

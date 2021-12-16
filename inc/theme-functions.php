@@ -568,6 +568,10 @@ function generate_do_template_part( $template ) {
 			get_template_part( 'content', 'page' );
 		}
 
+		if ( 'page-team' === $template ) {
+			get_template_part( 'content', 'page-team' );
+		}
+
 		if ( 'single' === $template ) {
 			get_template_part( 'content', 'single' );
 		}
