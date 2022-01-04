@@ -572,19 +572,19 @@ ul {
 }
 
 .text-super.text-super-small {
-  font-size: 45px;
-  line-height: 55px;
+  font-size: 30px;
+  line-height: 35px;
 }
 @media screen and (min-width: 375px) {
   .text-super.text-super-small {
-    font-size: calc(45px + -15 * ((100vw - 375px) / 1545));
-    line-height: calc(55px + -20 * ((100vw - 375px) / 1545));
+    font-size: calc(30px + 15 * ((100vw - 375px) / 1545));
+    line-height: calc(35px + 15 * ((100vw - 375px) / 1545));
   }
 }
 @media screen and (min-width: 1920px) {
   .text-super.text-super-small {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 45px;
+    line-height: 50px;
   }
 }
 
@@ -928,6 +928,7 @@ body.menu-open {
 }
 .inner-container--medium {
   max-width: 1350px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1104,6 +1105,9 @@ header.site-header .toggled ul#menu-main {
   padding-right: 10px;
 }
 
+.team__mitglied {
+  margin-bottom: 250px;
+}
 .team__mitglied > .flex {
   flex: 1 1 0%;
 }

@@ -18,7 +18,15 @@
 							<p><?php the_content() ?></p>
 				</div>
 			</div>
-			<div class="team__mitglied__tags-wrapper"></div>
+			<div class="team__mitglied__tags-wrapper">
+				<?php
+				$terms = get_field('personliche_skills');
+				if ($terms) : 
+				foreach ($terms as $term) : ?>
+								<p class="text-meta team__mitglied__tags-wrapper__tag"><?php echo get_term( $term )->name; ?></p>
+						<?php endforeach; 
+					endif; ?>
+			</div>
 		</div>
 	<?php endwhile; ?>
 	<!-- end of the loop -->
