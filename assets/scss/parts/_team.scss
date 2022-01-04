@@ -26,6 +26,22 @@
     p.team-title {
         @include font-text-bold;
     }
+    .team__mitglied__tags-wrapper {
+        margin-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        p.team__mitglied__tags-wrapper__tag {
+            text-transform: none;
+            font-size: 16px;
+            font-weight: 300;
+            background-color: $color-grey;
+            padding: 8px;
+            border-radius: 8px;
+            margin-top: 16px;
+            margin-bottom: 0;
+            margin-right: 16px;
+        }
+    }
 }
 
 .team__mitglied:nth-child(even) {
@@ -37,6 +53,13 @@
     }
     .team__mitglied__txt-wrapper {
         margin-right: 16px;
+    }
+    .team__mitglied__tags-wrapper {
+        justify-content: flex-end;
+        p.team__mitglied__tags-wrapper__tag {
+            margin-left: 16px;
+            margin-right: 0;
+        }
     }
 }
 
