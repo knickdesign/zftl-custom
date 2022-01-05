@@ -1,0 +1,30 @@
+.offers {
+    margin-top: 200px;
+    .offers__offer__body {
+        align-items: stretch;
+        .offers__offer__body__img-wrapper {
+            margin-right: 10px;
+        }
+        .offers__offer__body__text-wrapper {
+            margin-left: 10%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .offers__offer__body__text-wrapper__tags {
+                display: flex;
+                flex-wrap: wrap;
+                .offers__offer__body__text-wrapper__tags__tag {
+                    text-transform: none;
+                    font-size: 16px;
+                    font-weight: 300;
+                    background-color: white;
+                    color: $color-blue-dark;
+                    padding: 8px;
+                    border-radius: 15px;
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}

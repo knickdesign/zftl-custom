@@ -254,6 +254,10 @@ header.site-header + div.featured-image.page-header-image.grid-container.grid-pa
 .flex {
   display: flex;
 }
+.flex--column {
+  display: flex;
+  flex-direction: column;
+}
 
 div,
 p,
@@ -921,14 +925,19 @@ body.menu-open {
   margin: 0 auto;
 }
 .inner-container--small {
-  max-width: 1070px;
+  max-width: 1270px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .inner-container--small .wp-block-column:not(:first-child) {
   margin-left: 15%;
 }
 .inner-container--medium {
-  max-width: 1350px;
+  max-width: 1550px;
   margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1218,6 +1227,14 @@ button:hover,
   color: #8BC0B6;
 }
 
+.link--booking {
+  color: white;
+  font-family: "Exo 2", Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  margin: 16px 0;
+}
+
 .banner-background--blue {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -1273,6 +1290,37 @@ button:hover,
   width: 50%;
   margin-left: 10%;
   margin-top: -20%;
+}
+
+.offers {
+  margin-top: 200px;
+}
+.offers .offers__offer__body {
+  align-items: stretch;
+}
+.offers .offers__offer__body .offers__offer__body__img-wrapper {
+  margin-right: 10px;
+}
+.offers .offers__offer__body .offers__offer__body__text-wrapper {
+  margin-left: 10%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.offers .offers__offer__body .offers__offer__body__text-wrapper .offers__offer__body__text-wrapper__tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.offers .offers__offer__body .offers__offer__body__text-wrapper .offers__offer__body__text-wrapper__tags .offers__offer__body__text-wrapper__tags__tag {
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: white;
+  color: #1D3753;
+  padding: 8px;
+  border-radius: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */

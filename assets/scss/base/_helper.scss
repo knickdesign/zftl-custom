@@ -93,4 +93,8 @@ header.site-header+div.featured-image.page-header-image.grid-container.grid-pare
 
 .flex {
     display: flex;
+    &--column {
+        display: flex;
+        flex-direction: column;
+    }
 }

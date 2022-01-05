@@ -24,3 +24,11 @@ button,
         color: $color-turquoise;
     }
 }
+
+.link {
+    &--booking {
+        color: white;
+        @include font-text-bold;
+        margin: 16px 0;
+    }
+}

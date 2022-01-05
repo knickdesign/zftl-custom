@@ -44,13 +44,18 @@
         .inner-container {
             margin: 0 auto;
             &--small {
-                max-width: 1070px;
+                max-width: 1270px;
+                margin: 0 auto;
+                padding-left: 100px;
+                padding-right: 100px;
                 .wp-block-column:not(:first-child) {
                     margin-left: 15%;
                 }
             }
             &--medium {
-                max-width: 1350px;
+                max-width: 1550px;
                 margin: 0 auto;
+                padding-left: 100px;
+                padding-right: 100px;
             }
         }
