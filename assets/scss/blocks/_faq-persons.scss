@@ -1,0 +1,31 @@
+.faq-persons {
+    align-items: center;
+    .faq-persons__txt-wrapper {
+        .btn {
+            margin-top: 50px;
+        }
+    }
+    .faq-persons__persons-wrapper {
+        .faq-persons__persons-wrapper__person {
+            text-align: center;
+            .faq-persons__persons-wrapper__person__img {
+                border-radius: 100%;
+                width: 60%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+            }
+            .faq-persons__persons-wrapper__person__name,
+            .faq-persons__persons-wrapper__person__job {
+                font-size: 22px;
+            }
+            .faq-persons__persons-wrapper__person__name {
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+            .faq-persons__persons-wrapper__person__job {
+                font-weight: 300;
+                margin-top: 8px;
+            }
+        }
+    }
+}

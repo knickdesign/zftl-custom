@@ -1,9 +1,27 @@
 .offers {
     margin-top: 200px;
+    .offers__offer__head {
+        p,
+        h4 {
+            z-index: 2;
+            color: $color-blue-dark;
+            position: relative;
+            margin-bottom: 5px;
+        }
+        .offers__offer__head__img {
+            width: 400px;
+            position: absolute;
+            transform: translate(-66px, -55px);
+            z-index: 1;
+        }
+    }
     .offers__offer__body {
         align-items: stretch;
+        z-index: 4;
         .offers__offer__body__img-wrapper {
             margin-right: 10px;
+            position: relative;
+            z-index: 2;
         }
         .offers__offer__body__text-wrapper {
             margin-left: 10%;

@@ -1,0 +1,23 @@
+.shop-links {
+    width: 60%;
+    max-width: 1070px;
+    margin: 150px auto;
+    background-color: $color-turquoise-transparent;
+    padding: 80px 130px;
+    .shop-links__wrapper__link-wrapper {
+        margin-top: 40px;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 16px;
+        .shop-links__wrapper__link-wrapper__link {
+            border-radius: 13px;
+            background-color: $color-turquoise;
+            max-width: 30%;
+            .shop-links__wrapper__link-wrapper__link__txt-wrapper {
+                svg {
+                    fill: $color-blue-dark;
+                }
+            }
+        }
+    }
+}

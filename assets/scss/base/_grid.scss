@@ -44,18 +44,14 @@
         .inner-container {
             margin: 0 auto;
             &--small {
-                max-width: 1270px;
+                max-width: $grid-spacing-small-width;
                 margin: 0 auto;
-                padding-left: 100px;
-                padding-right: 100px;
                 .wp-block-column:not(:first-child) {
                     margin-left: 15%;
                 }
             }
             &--medium {
-                max-width: 1550px;
+                max-width: $grid-spacing-medium-width;
                 margin: 0 auto;
-                padding-left: 100px;
-                padding-right: 100px;
             }
         }

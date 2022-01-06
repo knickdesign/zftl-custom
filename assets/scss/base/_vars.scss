@@ -11,6 +11,9 @@ $spacing2: 16px;
 $spacing3: 21px;
 $spacing4: 30px;
 $spacing5: 50px;
+// grid spacing
+$grid-spacing-small-width: 1070px;
+$grid-spacing-medium-width: 1350px;
 // dimensions
 $wrapper-x-padding: 24px;
 $radius-left: 10px 0px 0px 10px;
@@ -27,6 +30,7 @@ $color-blue-dark: #1D3753;
 $color-blue-mid: #43667E;
 $color-coral: #EE907D;
 $color-turquoise: #8BC0B6;
+$color-turquoise-transparent: rgba(139, 192, 182, 0.16);
 // font-size and line-height
 $text-font-size: 20px;
 $text-line-height: 28px;

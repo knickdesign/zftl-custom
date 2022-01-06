@@ -100,6 +100,13 @@ ul {
     @include text-super-small;
 }
 
+.headline-offer {
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
+    margin-bottom: 15px!important;
+}
+
 .text-meta {
     @include text-meta;
 }

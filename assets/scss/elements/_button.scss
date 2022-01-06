@@ -25,10 +25,32 @@ button,
     }
 }
 
+.btn.text-blue-dark:hover {
+    color: $color-turquoise!important;
+}
+
 .link {
     &--booking {
         color: white;
         @include font-text-bold;
         margin: 16px 0;
+        &::before {
+            content: url('../img/arrow.svg');
+            width: 20px;
+            margin-right: 20px;
+            margin-left: 0px;
+            transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            -ms-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+        }
+        &:hover {
+            color: white;
+            &::before {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
     }
 }

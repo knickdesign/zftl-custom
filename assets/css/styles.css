@@ -16,7 +16,7 @@
 
 .text-blue-dark,
 .text-blue-dark:before {
-  color: #1D3753;
+  color: #1D3753 !important;
 }
 
 .text-blue-light,
@@ -592,6 +592,13 @@ ul {
   }
 }
 
+.headline-offer {
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+  margin-bottom: 15px !important;
+}
+
 .text-meta {
   font-size: 22px;
   line-height: 24px;
@@ -925,19 +932,15 @@ body.menu-open {
   margin: 0 auto;
 }
 .inner-container--small {
-  max-width: 1270px;
+  max-width: 1070px;
   margin: 0 auto;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 .inner-container--small .wp-block-column:not(:first-child) {
   margin-left: 15%;
 }
 .inner-container--medium {
-  max-width: 1550px;
+  max-width: 1350px;
   margin: 0 auto;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1227,12 +1230,34 @@ button:hover,
   color: #8BC0B6;
 }
 
+.btn.text-blue-dark:hover {
+  color: #8BC0B6 !important;
+}
+
 .link--booking {
   color: white;
   font-family: "Exo 2", Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   margin: 16px 0;
+}
+.link--booking::before {
+  content: url("../img/arrow.svg");
+  width: 20px;
+  margin-right: 20px;
+  margin-left: 0px;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+}
+.link--booking:hover {
+  color: white;
+}
+.link--booking:hover::before {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .banner-background--blue {
@@ -1246,7 +1271,7 @@ button:hover,
 .banner-background--blue .banner-background--blue__inner {
   margin-top: 4rem;
   margin-bottom: 1rem;
-  padding: 40px;
+  padding: 100px;
 }
 .banner-background--blue p,
 .banner-background--blue h1,
@@ -1272,6 +1297,10 @@ button:hover,
   transform: scale(1.01);
 }
 
+.testimonial {
+  margin-bottom: 200px;
+  margin-top: 150px;
+}
 .testimonial .testimonial__txt-wrapper {
   z-index: 5;
   position: relative;
@@ -1295,11 +1324,27 @@ button:hover,
 .offers {
   margin-top: 200px;
 }
+.offers .offers__offer__head p,
+.offers .offers__offer__head h4 {
+  z-index: 2;
+  color: #1D3753;
+  position: relative;
+  margin-bottom: 5px;
+}
+.offers .offers__offer__head .offers__offer__head__img {
+  width: 400px;
+  position: absolute;
+  transform: translate(-66px, -55px);
+  z-index: 1;
+}
 .offers .offers__offer__body {
   align-items: stretch;
+  z-index: 4;
 }
 .offers .offers__offer__body .offers__offer__body__img-wrapper {
   margin-right: 10px;
+  position: relative;
+  z-index: 2;
 }
 .offers .offers__offer__body .offers__offer__body__text-wrapper {
   margin-left: 10%;
@@ -1321,6 +1366,56 @@ button:hover,
   margin-top: 8px;
   margin-bottom: 8px;
   margin-right: 16px;
+}
+
+.faq-persons {
+  align-items: center;
+}
+.faq-persons .faq-persons__txt-wrapper .btn {
+  margin-top: 50px;
+}
+.faq-persons .faq-persons__persons-wrapper .faq-persons__persons-wrapper__person {
+  text-align: center;
+}
+.faq-persons .faq-persons__persons-wrapper .faq-persons__persons-wrapper__person .faq-persons__persons-wrapper__person__img {
+  border-radius: 100%;
+  width: 60%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.faq-persons .faq-persons__persons-wrapper .faq-persons__persons-wrapper__person .faq-persons__persons-wrapper__person__name,
+.faq-persons .faq-persons__persons-wrapper .faq-persons__persons-wrapper__person .faq-persons__persons-wrapper__person__job {
+  font-size: 22px;
+}
+.faq-persons .faq-persons__persons-wrapper .faq-persons__persons-wrapper__person .faq-persons__persons-wrapper__person__name {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.faq-persons .faq-persons__persons-wrapper .faq-persons__persons-wrapper__person .faq-persons__persons-wrapper__person__job {
+  font-weight: 300;
+  margin-top: 8px;
+}
+
+.shop-links {
+  width: 60%;
+  max-width: 1070px;
+  margin: 150px auto;
+  background-color: rgba(139, 192, 182, 0.16);
+  padding: 80px 130px;
+}
+.shop-links .shop-links__wrapper__link-wrapper {
+  margin-top: 40px;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 16px;
+}
+.shop-links .shop-links__wrapper__link-wrapper .shop-links__wrapper__link-wrapper__link {
+  border-radius: 13px;
+  background-color: #8BC0B6;
+  max-width: 30%;
+}
+.shop-links .shop-links__wrapper__link-wrapper .shop-links__wrapper__link-wrapper__link .shop-links__wrapper__link-wrapper__link__txt-wrapper svg {
+  fill: #1D3753;
 }
 
 /*# sourceMappingURL=styles.css.map */
