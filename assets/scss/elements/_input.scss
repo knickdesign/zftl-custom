@@ -1,0 +1,28 @@
+.jet-form-builder__field-label.for-checkbox>span::before {
+    border-radius: 0!important;
+    border: none;
+    background-color: $color-grey;
+}
+
+.jet-form-builder__submit-wrap {
+    align-items: flex-end;
+}
+
+.jet-form-builder__label-text,
+.jet-form-builder__field-label span {
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.jet-form-builder__field-wrap {
+    margin-bottom: 20px;
+    input,
+    textarea {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: $color-grey;
+        border-bottom: 3px solid $color-turquoise;
+    }
+}

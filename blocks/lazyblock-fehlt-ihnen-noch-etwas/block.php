@@ -21,7 +21,7 @@
                         <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
                 </div>
                 <div class="shop-links__wrapper__link-wrapper__link__img-wrapper">
-                    <img src="<?php echo (get_stylesheet_directory() . "/assets/img/shop-prev.jpg"); ?>">
+                    <img src="<?php echo (get_stylesheet_directory_uri() . "/assets/img/shop-prev.jpg"); ?>">
                 </div>
             </div>
             <div class="shop-links__wrapper__link-wrapper__link flex">
@@ -31,7 +31,7 @@
                         <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
                 </div>
                 <div class="shop-links__wrapper__link-wrapper__link__img-wrapper">
-                    <img src="<?php echo (get_stylesheet_directory() . "/assets/img/shop-prev.jpg"); ?>">
+                    <img src="<?php echo (get_stylesheet_directory_uri() . "/assets/img/shop-prev.jpg"); ?>">
                 </div>
             </div>
             <div class="shop-links__wrapper__link-wrapper__link flex">
@@ -41,7 +41,7 @@
                         <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
                 </div>
                 <div class="shop-links__wrapper__link-wrapper__link__img-wrapper">
-                    <img src="<?php echo (get_stylesheet_directory() . "/assets/img/shop-prev.jpg"); ?>">
+                    <img src="<?php echo (get_stylesheet_directory_uri() . "/assets/img/shop-prev.jpg"); ?>">
                 </div>
             </div>
             <div class="shop-links__wrapper__link-wrapper__link flex">
@@ -51,7 +51,7 @@
                         <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
                 </div>
                 <div class="shop-links__wrapper__link-wrapper__link__img-wrapper">
-                    <img src="<?php echo (get_stylesheet_directory() . "/assets/img/shop-prev.jpg"); ?>">
+                    <img src="<?php echo (get_stylesheet_directory_uri() . "/assets/img/shop-prev.jpg"); ?>">
                 </div>
             </div>
             <div class="shop-links__wrapper__link-wrapper__link flex">
@@ -61,7 +61,7 @@
                         <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
                 </div>
                 <div class="shop-links__wrapper__link-wrapper__link__img-wrapper">
-                    <img src="<?php echo (get_stylesheet_directory() . "/assets/img/shop-prev.jpg"); ?>">
+                    <img src="<?php echo (get_stylesheet_directory_uri() . "/assets/img/shop-prev.jpg"); ?>">
                 </div>
             </div>
             <div class="shop-links__wrapper__link-wrapper__link flex">
@@ -71,7 +71,7 @@
                         <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
                 </div>
                 <div class="shop-links__wrapper__link-wrapper__link__img-wrapper">
-                    <img src="<?php echo (get_stylesheet_directory() . "/assets/img/shop-prev.jpg"); ?>">
+                    <img src="<?php echo (get_stylesheet_directory_uri() . "/assets/img/shop-prev.jpg"); ?>">
                 </div>
             </div>
         </div>

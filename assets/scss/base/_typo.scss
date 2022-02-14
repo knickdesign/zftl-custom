@@ -119,6 +119,11 @@ ul {
     @include font-text-bold;
 }
 
+.font-white,
+.font-white * {
+    color: white!important;
+}
+
 a {
     @include transition-all;
 }
