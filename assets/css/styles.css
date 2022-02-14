@@ -1286,7 +1286,7 @@ button:hover,
 }
 
 .jet-form-builder__submit-wrap {
-  align-items: flex-end;
+  align-items: flex-end !important;
 }
 
 .jet-form-builder__label-text,
