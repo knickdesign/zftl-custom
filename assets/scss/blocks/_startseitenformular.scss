@@ -1,0 +1,84 @@
+.startseitenformular {
+    .startseitenformular__form {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .startseitenformular__form__button-wrapper {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            gap: 32px;
+            .startseitenformular__form__button-wrapper__button {
+                position: relative;
+                flex: 1 1 33.3%;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                input {
+                    display: none;
+                    &:checked+.startseitenformular__form__button-wrapper__button__inner {
+                        .startseitenformular__form__button-wrapper__button__inner__checkcircle {
+                            background-color: $color-turquoise;
+                        }
+                    }
+                }
+                .startseitenformular__form__button-wrapper__button__inner {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        object-position: 100% 100%;
+                    }
+                    h4 {
+                        position: absolute;
+                        max-width: 30%;
+                        z-index: 4;
+                        top: 20px;
+                        left: 20px;
+                    }
+                    .startseitenformular__form__button-wrapper__button__inner__checkcircle {
+                        position: absolute;
+                        width: 30px;
+                        aspect-ratio: 1 / 1;
+                        border-radius: 50%;
+                        padding: 3px;
+                        box-shadow: 0 0 0 3pt $color-turquoise;
+                        border: 3px solid white;
+                        z-index: 4;
+                        bottom: 20px;
+                        left: 20px;
+                    }
+                }
+            }
+        }
+        .startseitenformular__form__slider-wrapper {
+            padding: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: flex-end;
+            .slider {
+                -webkit-appearance: none;
+                width: 50%;
+                height: 8px;
+                background: $color-grey;
+                outline: none;
+                opacity: 1;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+            }
+            .slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: $color-turquoise;
+                cursor: pointer;
+            }
+            .slider::-moz-range-thumb {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: $color-turquoise;
+                cursor: pointer;
+            }
+        }
+    }
+}
