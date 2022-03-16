@@ -78,28 +78,38 @@
                     <div class="startseitenformular__form__button-wrapper__button__inner__checkcircle"></div>
                 </div>
             </label>
-        </div>                            
-        <button>Jetzt Auswertung ansehen</button>
+        </div> 
+        <div class="startseitenformular__form__txt">
+            <h2>Ein guter Anfang</h2>
+            <p class="text-bigger">
+                Danke für den ersten Eindruck. Die Details besprechen wir gerne beim kostenlosen Beratungstermin. Ihre Fitness ist bei uns Maßarbeit! Ein paar Tipps haben wir schon jetzt für Sie:
+            </p>
+        </div>                   
+        <button class="startseitenformular__form__button">Jetzt Auswertung ansehen</button>
         <input type="hidden" name="action" value="myfilter">
     </form>
+    <div class="startseitenformular__response" id="response">
+
+    </div>
 </div>
-<!-- <script>
+
+<script>
     jQuery(function($) {
-        $('#filter').submit(function() {
-            var filter = $('#filter');
+        $('#startseitenformular').submit(function() {
+            var form = $('#startseitenformular');
             $.ajax({
-                url: filter.attr('action'),
-                data: filter.serialize(), // form data
-                type: filter.attr('method'), // POST
+                url: form.attr('action'),
+                data: form.serialize(), // form data
+                type: form.attr('method'), // POST
                 beforeSend: function(xhr) {
-                    filter.find('button').text('Filtern...'); // changing the button label
+                    form.find('button').text('Ergebnisse auswerten..'); // changing the button label
                 },
                 success: function(data) {
-                    filter.find('button').text('Filter anwenden'); // changing the button label back
+                    form.find('button').text('Jetzt Auswertung ansehen'); // changing the button label back
                     $('#response').html(data); // insert data
                 }
             });
             return false;
         });
     });
-</script> -->
+</script>

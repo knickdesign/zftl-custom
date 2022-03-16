@@ -26,4 +26,25 @@ add_action( 'generate_before_do_template_part', function() {
         <?php get_template_part( 'content-page', 'team' );?>
     <?php endif;
 } );
+function misha_filter_function()
+{
+    $result = array(
+        'problem' => 0,
+        'leidensdruck' => 0,
+    );
+
+    // for categories
+    if (!isset($_POST['allcategoriesfilter'])) {
+        if (isset($_POST['categoryfilter']))
+            $result['problem'] = array(
+                array(
+                    'taxonomy' => 'category',
+                    'field' => 'id',
+                    'terms' => $_POST['categoryfilter']
+                )
+            );
+    }
+
+                die();
+            }
 ?>
