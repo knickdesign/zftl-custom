@@ -10,13 +10,13 @@
 ?>
 <div class="startseitenformular">
     <h2 class="text-super">Machen Sie den Fitness-Schnellcheck</h2>
-    <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="startseitenformular" class="startseitenformular__form">
+    <form action="<?php echo get_home_url() ?>/wp-admin/admin-ajax.php" method="POST" id="startseitenformular" class="startseitenformular__form">
     <!-- Filterkategorie -->
         <h3>Woran möchten Sie arbeiten?</h3>
         <div class="startseitenformular__form__button-wrapper flex">
             <!-- Filter -->
             <label class="startseitenformular__form__button-wrapper__button">
-                <input type="radio" name="problem" value="Übergewicht" />
+                <input type="radio" name="problem" value="ubergewicht" />
                 <div class="startseitenformular__form__button-wrapper__button__inner">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/TMP-prev-button.png">
                     <h4>Über&shy;gewicht</h4>
@@ -25,7 +25,7 @@
             </label>
              <!-- Filter -->
              <label class="startseitenformular__form__button-wrapper__button">
-                <input type="radio" name="problem" value="Gelenkschmerzen" />
+                <input type="radio" name="problem" value="gelenkschmerzen" />
                 <div class="startseitenformular__form__button-wrapper__button__inner">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/TMP-prev-button.png">
                     <h4>Gelenk&shy;schmerzen</h4>
@@ -34,7 +34,7 @@
             </label>
              <!-- Filter -->
              <label class="startseitenformular__form__button-wrapper__button">
-                <input type="radio" name="problem" value="allgemeine Fitness" />
+                <input type="radio" name="problem" value="allgemeineFitness" />
                 <div class="startseitenformular__form__button-wrapper__button__inner">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/TMP-prev-button.png">
                     <h4>allgemeine Fitness</h4>
@@ -53,7 +53,7 @@
         <div class="startseitenformular__form__button-wrapper flex">
             <!-- Filter -->
             <label class="startseitenformular__form__button-wrapper__button">
-                <input type="radio" name="leidensdruck" value="sehr groß" />
+                <input type="radio" name="leidensdruck" value="sehrGroß" />
                 <div class="startseitenformular__form__button-wrapper__button__inner">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/TMP-prev-button.png">
                     <h4>Sehr groß</h4>
@@ -62,7 +62,7 @@
             </label>
              <!-- Filter -->
              <label class="startseitenformular__form__button-wrapper__button">
-                <input type="radio" name="leidensdruck" value="mittelmäßig" />
+                <input type="radio" name="leidensdruck" value="mittelmassig" />
                 <div class="startseitenformular__form__button-wrapper__button__inner">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/TMP-prev-button.png">
                     <h4>Mittelmäßig</h4>
@@ -92,7 +92,7 @@
 
     </div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     jQuery(function($) {
         $('#startseitenformular').submit(function() {

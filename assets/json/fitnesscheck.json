@@ -1,53 +1,56 @@
 {
-    "choices": [{
-            "problem": "Übergewicht",
-            "leidensdruck": {
-                "sehr groß": {
-                    "chancen": "<li>mehr Luft beim Treppensteigen</li><li>weniger Medikamente</li><li>Wohlbefinden steigt</li><li>Selbstbewusstsein steigt</li><li>allgemeine Senkung der Risiken</li>",
-                    "risiken": "<li>Bluthochdruck</li><li>Diabetes</li><li>erhöhtes Schlaganfallrisiko</li>"
-                },
-                "mittelmäßig": {
-                    "chancen": "<li>die Hürde ist nicht so groß</li><li>raus aus der Komfortzone</li><li>Teufelskreis verlassen</li>",
-                    "risiken": "<li>Folgeerkrankungen drohen</li><li>Lebensqualität sinkt</li><li>Abwärtsspirale</li><li>Organschäden drohen</li><li>Knieschmerzen</li>"
-                },
-                "kaum": {
-                    "chancen": "<li>in kurzer Zeit viel erreichen</li><li>schnelle Ergebnisse</li><li>alte Klamotten passen wieder</li><li>Kram die Jeans wieder raus</li>",
-                    "risiken": "<li>Unwohlsein</li><li>Unzufriedenheit wächst</li><li>Fühlst du dich wohl in deiner Komfortzone</li><li>Spiegelbild gefällt nicht mehr</li><li>du brauchst schnellen Erfolg</li><li>erste Alltagseinschränkungen</li>"
-                }
+    "problem": [{
+            "ubergewicht": {
+                "leidensdruck": [{
+                    "sehrGroß": {
+                        "chancen": "<li>mehr Luft beim Treppensteigen</li><li>weniger Medikamente</li><li>Wohlbefinden steigt</li><li>Selbstbewusstsein steigt</li><li>allgemeine Senkung der Risiken</li>",
+                        "risiken": "<li>Bluthochdruck</li><li>Diabetes</li><li>erhöhtes Schlaganfallrisiko</li>"
+                    },
+                    "mittelmassig": {
+                        "chancen": "<li>die Hürde ist nicht so groß</li><li>raus aus der Komfortzone</li><li>Teufelskreis verlassen</li>",
+                        "risiken": "<li>Folgeerkrankungen drohen</li><li>Lebensqualität sinkt</li><li>Abwärtsspirale</li><li>Organschäden drohen</li><li>Knieschmerzen</li>"
+                    },
+                    "kaum": {
+                        "chancen": "<li>in kurzer Zeit viel erreichen</li><li>schnelle Ergebnisse</li><li>alte Klamotten passen wieder</li><li>Kram die Jeans wieder raus</li>",
+                        "risiken": "<li>Unwohlsein</li><li>Unzufriedenheit wächst</li><li>Fühlst du dich wohl in deiner Komfortzone</li><li>Spiegelbild gefällt nicht mehr</li><li>du brauchst schnellen Erfolg</li><li>erste Alltagseinschränkungen</li>"
+                    }
+                }]
             }
         },
         {
-            "problem": "Gelenkschmerzen",
-            "leidensdruck": {
-                "sehr groß": {
-                    "chancen": "<li>Steigerung Lebensqualität</li><li>Schmerzen reduzieren</li><li>am Leben teilhaben</li><li>zurück zur Aktivität</li><li>weniger Arztbesuche</li><li>Beweglichkeit steigt</li><li>durch die Kombination von Physio und Training findest du zurück zur Vitalität</li>",
-                    "risiken": "<li>OP droht</li><li>Schmerzmittelkonsum steigt</li><li>Verlust der Selbstständigkeit</li>"
-                },
-                "mittelmäßig": {
-                    "chancen": "<li>Verschlechterung vorbeugen</li><li>Prävention</li><li>schmerzfrei schlafen</li><li>volle Leistungsfähigkeit beim Sport</li>",
-                    "risiken": "<li>Hobbys fallen weg</li><li>Sport geht nicht mehr</li><li>Arbeitsplatz wird zur Qual</li><li>nicht mehr mit den Kindern toben</li><li>Arztbesuche und Medikamente werden regelmäßiger</li><li>Dysballancen</li><li>Fehlhaltungen</li>"
-                },
-                "kaum": {
-                    "chancen": "<li>schnell zurück zur Normalität</li><li>erhöhte Lebensqualität</li><li>schnelle Unterstützung</li><li>Prävention</li>",
-                    "risiken": "<li>Fehlhaltungen</li><li>Dysballancen</li><li>Verschlechterung</li><li>mehr Schmerzen</li>"
-                }
+            "gelenkschmerzen": {
+                "leidensdruck": [{
+                    "sehrGroß": {
+                        "chancen": "<li>Steigerung Lebensqualität</li><li>Schmerzen reduzieren</li><li>am Leben teilhaben</li><li>zurück zur Aktivität</li><li>weniger Arztbesuche</li><li>Beweglichkeit steigt</li><li>durch die Kombination von Physio und Training findest du zurück zur Vitalität</li>",
+                        "risiken": "<li>OP droht</li><li>Schmerzmittelkonsum steigt</li><li>Verlust der Selbstständigkeit</li>"
+                    },
+                    "mittelmassig": {
+                        "chancen": "<li>Verschlechterung vorbeugen</li><li>Prävention</li><li>schmerzfrei schlafen</li><li>volle Leistungsfähigkeit beim Sport</li>",
+                        "risiken": "<li>Hobbys fallen weg</li><li>Sport geht nicht mehr</li><li>Arbeitsplatz wird zur Qual</li><li>nicht mehr mit den Kindern toben</li><li>Arztbesuche und Medikamente werden regelmäßiger</li><li>Dysballancen</li><li>Fehlhaltungen</li>"
+                    },
+                    "kaum": {
+                        "chancen": "<li>schnell zurück zur Normalität</li><li>erhöhte Lebensqualität</li><li>schnelle Unterstützung</li><li>Prävention</li>",
+                        "risiken": "<li>Fehlhaltungen</li><li>Dysballancen</li><li>Verschlechterung</li><li>mehr Schmerzen</li>"
+                    }
+                }]
             }
         },
         {
-            "problem": "allgemeine Fitness",
-            "leidensdruck": {
-                "sehr groß": {
-                    "chancen": "<li>Prävention</li><li>Glücksgefühl</li><li>Motivation</li><li>Belastbarkeit steigern</li><li>mentale Stärke</li><li>bewusster Lebensstil</li><li>Kraft</li><li>Bewegung</li><li>Ausdauer</li>",
-                    "risiken": "<li>Hilfsbedürftigkeit steigt</li><li>Immunsystem wird schwach</li><li>Kraft- und Beweglichkeitsverlust</li><li>Erwerbsunfähigkeit</li><li>Depressionsrisiko</li><li>Ersatzbefriedigung</li>"
-                },
-                "mittelmäßig": {
-                    "chancen": "<li>toben mit den Enkeln</li><li>Stressabbau</li><li>Leistungsfähigkeit steigern</li><li>positive Lebenseinstellung</li><li>Optimismus</li>",
-                    "risiken": "<li>Verschlechterung der Lebensqualität</li><li>Jobverlust</li><li>Einschränkung bei Hobbys</li><li>mehr Wehwechen</li><li>Abnahme Bewegungsbegeisterung</li><li>Antriebslosigkeit</li><li>Erschöpfung</li><li>Stresslevel</li><li>Schlafstörungen</li>"
-                },
-                "kaum": {
-                    "chancen": "<li>Anfang machen</li><li>Schweinehund besiegen</li><li>der Extrameter</li>",
-                    "risiken": "<li>Dysballancen</li><li>Unzufriedenheit</li><li>Verspannungen</li><li>Anzeichen der Verschlechterung</li>"
-                }
+            "allgemeineFitness": {
+                "leidensdruck": [{
+                    "sehrGroß": {
+                        "chancen": "<li>Prävention</li><li>Glücksgefühl</li><li>Motivation</li><li>Belastbarkeit steigern</li><li>mentale Stärke</li><li>bewusster Lebensstil</li><li>Kraft</li><li>Bewegung</li><li>Ausdauer</li>",
+                        "risiken": "<li>Hilfsbedürftigkeit steigt</li><li>Immunsystem wird schwach</li><li>Kraft- und Beweglichkeitsverlust</li><li>Erwerbsunfähigkeit</li><li>Depressionsrisiko</li><li>Ersatzbefriedigung</li>"
+                    },
+                    "mittelmassig": {
+                        "chancen": "<li>toben mit den Enkeln</li><li>Stressabbau</li><li>Leistungsfähigkeit steigern</li><li>positive Lebenseinstellung</li><li>Optimismus</li>",
+                        "risiken": "<li>Verschlechterung der Lebensqualität</li><li>Jobverlust</li><li>Einschränkung bei Hobbys</li><li>mehr Wehwechen</li><li>Abnahme Bewegungsbegeisterung</li><li>Antriebslosigkeit</li><li>Erschöpfung</li><li>Stresslevel</li><li>Schlafstörungen</li>"
+                    },
+                    "kaum": {
+                        "chancen": "<li>Anfang machen</li><li>Schweinehund besiegen</li><li>der Extrameter</li>",
+                        "risiken": "<li>Dysballancen</li><li>Unzufriedenheit</li><li>Verspannungen</li><li>Anzeichen der Verschlechterung</li>"
+                    }
+                }]
             }
         }
     ]
