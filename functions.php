@@ -42,36 +42,107 @@ function misha_filter_function()
     );
 
     // for categories
-    if (!isset($_POST['problem'])) {
+    if (isset($_POST['problem'])) {
         $result['problem'] = $_POST['problem'];
     }
-    if (!isset($_POST['leidensdruck'])) {
+    if (isset($_POST['leidensdruck'])) {
         $result['leidensdruck'] = $_POST['leidensdruck'];
     }
 
     $pathtojson = get_stylesheet_directory_uri() . "/assets/json/fitnesscheck.json";
-    if(file_exists($pathtojson)){
-        echo 'file exists';
-    }
-    else{
-        echo 'file doesnt exist';
-    }
-    $json = file_get_contents($pathtojson);
-    if($json != 0){
-    $texts = json_decode($json, true);
-    $test = $texts->problem['ubergewicht']->leidensdruck['sehrGroß']->chancen;
-    echo '<ul>';
-    echo '<li>';
-    echo json_encode($texts);
-    echo '</li>';
-    echo '<li>test 16</li>';
-    echo '</ul>';
-    }
-    else{
-        echo 'json not working';
-        echo  $pathtojson;
-        echo '7';
-    }
+
+    $arrContextOptions = array(
+        "ssl" => array(
+            "verify_peer" => false,
+            "verify_peer_name" => false,
+        ),
+    );
+    ?>
+    <div class="banner-background--blue">
+    <div class="swoosh swoosh--white-green-blue">
+        <img class="swoosh__img" src="<?php echo get_stylesheet_directory_uri() . "/assets/img/zftpl_hintergrunde/blau_gruen_weiß_v5.svg"?>">
+    </div>
+    <div class="banner-background--blue__inner site grid-container container hfeed">
+    <h2 class="text-super">Wir haben etwas passendes für Sie:</h2>
+<?php
+
+    $json = file_get_contents($pathtojson, false, stream_context_create($arrContextOptions));
+
+    if ($json != false) {
+        $texts = json_decode($json, true);
+        $chancen = $texts[$result['problem']]['leidensdruck'][$result['leidensdruck']]['chancen'];
+        $risiken = $texts[$result['problem']]['leidensdruck'][$result['leidensdruck']]['risiken'];
+        $slug = $texts[$result['problem']]['leidensdruck'][$result['leidensdruck']]['training'];
+        ?>
+        <div class="startseitenformular__response__chancen-und-risiken flex inner-container--small">
+        <div class="startseitenformular__response__chancen-und-risiken--inner">
+            <h3>Ihre Chancen</h3>
+            <ul class="startseitenformular__response__chancen-und-risiken__list">
+        <?php
+        echo $chancen;
+        ?>
+            </ul>
+    </div>
+    <div class="startseitenformular__response__chancen-und-risiken--inner">
+        <h3>Ihre Risiken</h3>
+            <ul class="startseitenformular__response__chancen-und-risiken__list">
+        <?php
+        echo $risiken;
+        ?>
+            </ul>
+            </div>
+        </div>
+        <h2 class="font-white">Unsere Angebote, die zu Ihnen passen</h2>
+        <?php
+        $mitgliedschaft_query = new WP_Query(
+            array(
+                'name'   => 'mitgliedschaft',
+                'post_type'   => 'training_und_kurse'
+            )
+        );
+    ?>
+        <div class="offers inner-container--medium">
+            <?php
+            if ($mitgliedschaft_query->have_posts()) : while ($mitgliedschaft_query->have_posts()) : $mitgliedschaft_query->the_post();
+                    $dir = get_stylesheet_directory();
+                    include($dir . '/assets/parts/offer.php');
+                endwhile;
+            else : ?>
+                <p>Keine Beiträge</p>
+            <?php endif;
+            wp_reset_postdata();
+
+            ?>
+        </div>
+        <?php
+
+        $custom_query = new WP_Query(
+            array(
+                'name'   => $slug,
+                'post_type'   => 'training_und_kurse'
+            )
+        );
+        ?>
+        <div class="offers inner-container--medium">
+            <?php
+            if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post();
+                    $dir = get_stylesheet_directory();
+                    include($dir . '/assets/parts/offer.php');
+                endwhile;
+            else : ?>
+                <p>Keine Beiträge</p>
+        <?php endif;
+            wp_reset_postdata();
+        }
+        ?>
+        </div>
+    </div>
+    <div class="swoosh swoosh--blue-red-white">
+    <img class="swoosh__img" src="<?php echo get_stylesheet_directory_uri() . "/assets/img/zftpl_hintergrunde/blau_rot_weiß_v2.svg"?>">
+</div>
+</div>
+
+    <?php
     die();
 }
     ?>

@@ -95,4 +95,21 @@
             }
         }
     }
+    .startseitenformular__response {
+        .startseitenformular__response__chancen-und-risiken {
+            color: white;
+            margin-top: 150px;
+            margin-bottom: 300px;
+            &--inner {
+                flex: 1 1 50%;
+                gap: 50px;
+            }
+            .startseitenformular__response__chancen-und-risiken__list {
+                color: white;
+                li {
+                    color: white;
+                }
+            }
+        }
+    }
 }

@@ -1161,3 +1161,14 @@ button,
         border-radius: 50%;
         background: #8BC0B6;
         cursor: pointer; }
+  .startseitenformular .startseitenformular__response .startseitenformular__response__chancen-und-risiken {
+    color: white;
+    margin-top: 150px;
+    margin-bottom: 300px; }
+    .startseitenformular .startseitenformular__response .startseitenformular__response__chancen-und-risiken--inner {
+      flex: 1 1 50%;
+      gap: 50px; }
+    .startseitenformular .startseitenformular__response .startseitenformular__response__chancen-und-risiken .startseitenformular__response__chancen-und-risiken__list {
+      color: white; }
+      .startseitenformular .startseitenformular__response .startseitenformular__response__chancen-und-risiken .startseitenformular__response__chancen-und-risiken__list li {
+        color: white; }
