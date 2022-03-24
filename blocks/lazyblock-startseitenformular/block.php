@@ -44,9 +44,10 @@
             </label>
         </div>
         <!-- Filterkategorie -->
+        <div class="startseitenformular__form__slider">
         <h3>Seit wann besteht das Problem?</h3>
         <div class="startseitenformular__form__slider-wrapper">
-            <img id="slider-img" src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/20220316_zeitbubbles-3.svg">
+            <img id="slider-img" src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/zftl-zeitbubble03.svg">
             <!-- Filter -->
             <input type="range" name="dauer" min="0" max="3" value="1" class="slider" id="time-slider" />
         </div>
@@ -60,23 +61,24 @@
                 output = this.value;
                 console.log(output);
                 if(output == 0){
-                    slider_img.src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/20220316_zeitbubbles_4.svg";
+                    slider_img.src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/zftl-zeitbubble04.svg";
                     console.log("little success");
                 }
                 else if(output == 1){
-                    slider_img.src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/20220316_zeitbubbles-3.svg";
+                    slider_img.src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/zftl-zeitbubble03.svg";
                     console.log("little success");
                 }
                 else if(output == 2){
-                    slider_img.src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/20220316_zeitbubbles-2.svg";
+                    slider_img.src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/zftl-zeitbubble02.svg";
                     console.log("little success");
                 }
                 else if(output == 3){
-                    slider_img.src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/20220316_zeitbubbles-1.svg";
+                    slider_img.src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/zftl-zeitbubble01.svg";
                     console.log("little success");
                 }
             }
         </script>
+        </div>
         <!-- Filterkategorie -->
         <h3>Wie schwer ist ihr Leidensdruck?</h3>
         <div class="startseitenformular__form__button-wrapper flex">

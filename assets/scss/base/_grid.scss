@@ -19,6 +19,10 @@
         .separate-containers .paging-navigation {
             padding-left: 100px;
             padding-right: 100px;
+            @media screen and (max-width: $breakpoint-sm-width) {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
         }
         
         .inner-container {

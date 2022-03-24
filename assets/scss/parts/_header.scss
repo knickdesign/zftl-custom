@@ -16,6 +16,15 @@ header.site-header {
                 color: $color-turquoise;
                 @include font-text-bold;
             }
+            @media screen and (max-width: $breakpoint-sm-width) {
+                transform: none;
+                left: 16px;
+                top: -17px;
+                max-width: calc( 100vw - 68px);
+                * {
+                    font-size: 4vw;
+                }
+            }
         }
     }
     &.has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
@@ -27,6 +36,17 @@ header.site-header {
         padding-top: 17px;
         max-height: 60px;
         z-index: 9999999999;
+        @media screen and (max-width: $breakpoint-sm-width) {
+            position: fixed;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            padding-bottom: 16px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            .icon-menu-bars {
+                float: right;
+            }
+        }
     }
     .toggled button.menu-toggle {
         background-color: transparent!important;
@@ -83,7 +103,7 @@ header.site-header {
     .toggled {
         #primary-menu::after {
             content: '';
-            background-image: url("../img/zftl-logo-clean-white.svg");
+            background-image: url("../img/signet/zftupl-signet-icon-weiss.svg");
             background-size: 50%;
             background-position: top center;
             background-repeat: no-repeat;
@@ -123,4 +143,9 @@ header.site-header {
             }
         }
     }
+}
+
+#home-logo {
+    max-width: 30%;
+    margin: 50px auto;
 }

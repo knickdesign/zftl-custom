@@ -1,9 +1,26 @@
 .shop-links {
-    width: 70%;
-    max-width: 1070px;
+    max-width: 970px;
     margin: 150px auto;
     background-color: $color-turquoise-transparent;
     padding: 80px 130px;
+    @media screen and (max-width: $breakpoint-m-width) {
+        padding: 40px 16px;
+    }
+    @media screen and (max-width: $breakpoint-sm-width) {
+        width: 100%;
+        padding: 40px 0;
+        position: relative;
+        background-color: transparent;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100vw;
+            top: 0;
+            left: -16px;
+            height: 100%;
+            background-color: $color-turquoise-transparent;
+        }
+    }
     .shop-links__wrapper__link-wrapper {
         margin-top: 40px;
         flex-wrap: wrap;
@@ -14,6 +31,9 @@
             border-radius: 13px;
             background-color: $color-turquoise;
             max-width: 30%;
+            @media screen and (max-width: $breakpoint-m-width) {
+                max-width: calc( 50% - 8px);
+            }
             .shop-links__wrapper__link-wrapper__link__txt-wrapper {
                 max-width: 50%;
                 padding: 10px;
@@ -21,6 +41,10 @@
                 -webkit-hyphens: auto;
                 -ms-hyphens: auto;
                 hyphens: auto;
+                @media screen and (max-width: $breakpoint-lxl-width) {
+                    flex: 0 1 100%;
+                    max-width: 100%;
+                }
                 h4 {
                     color: white;
                 }
@@ -30,6 +54,9 @@
                 }
             }
             .shop-links__wrapper__link-wrapper__link__img-wrapper {
+                @media screen and (max-width: $breakpoint-lxl-width) {
+                    display: none;
+                }
                 flex: 0 1 50%;
                 img {
                     width: 100%;

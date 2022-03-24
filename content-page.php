@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				 */
 				do_action( 'generate_before_page_title' );
 
-				if ( generate_show_title() ) {
+				if ( generate_show_title()) {
 					?>
 					<div class="subpage-header">
 					<div class="subpage-header__txt-container">
@@ -62,6 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 					<?php
 				}
+				
 
 
 				/**

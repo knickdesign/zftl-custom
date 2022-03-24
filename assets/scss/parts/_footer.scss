@@ -3,9 +3,13 @@
         margin-top: 7vw;
         padding-bottom: 7vw;
     }
-    .footer-widgets-container{
+    .footer-widgets-container {
         padding-left: 100px;
         padding-right: 100px;
+        @media screen and (max-width: $breakpoint-sm-width) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
     }
     #footer-widgets::before {
         content: url("../img/zftpl_hintergrunde/blau_gruen_weiß_v5.svg");
@@ -15,7 +19,7 @@
     }
     .footer-widget-1 {
         figure {
-            max-width: 50%;
+            max-width: 35%;
             margin: 0 auto;
         }
         h2 {

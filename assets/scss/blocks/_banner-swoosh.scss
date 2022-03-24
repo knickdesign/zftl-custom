@@ -9,6 +9,9 @@
         margin-top: 4rem;
         margin-bottom: 1rem;
         padding: 100px;
+        @media screen and (max-width: $breakpoint-sm-width) {
+            padding: 40px 16px;
+        }
     }
     p,
     h1,
