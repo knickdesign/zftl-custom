@@ -1164,6 +1164,12 @@ button,
       margin-top: 60px;
       margin-bottom: 150px;
       gap: 32px; }
+      @media screen and (max-width: 560px) {
+        .startseitenformular .startseitenformular__form .startseitenformular__form__button-wrapper {
+          display: block; }
+          .startseitenformular .startseitenformular__form .startseitenformular__form__button-wrapper .startseitenformular__form__button-wrapper__button__inner {
+            margin-bottom: 30px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); } }
       .startseitenformular .startseitenformular__form .startseitenformular__form__button-wrapper .startseitenformular__form__button-wrapper__button {
         position: relative;
         flex: 1 1 33.3%;
@@ -1198,6 +1204,9 @@ button,
       display: flex;
       align-items: center;
       gap: 50px; }
+      @media screen and (max-width: 560px) {
+        .startseitenformular .startseitenformular__form .startseitenformular__form__slider {
+          display: block; } }
     .startseitenformular .startseitenformular__form .startseitenformular__form__slider-wrapper {
       padding: 20px;
       margin-top: 60px;
@@ -1209,6 +1218,10 @@ button,
       display: flex;
       flex-direction: column;
       align-items: center; }
+      @media screen and (max-width: 560px) {
+        .startseitenformular .startseitenformular__form .startseitenformular__form__slider-wrapper {
+          width: 100%;
+          padding: 20px 0; } }
       .startseitenformular .startseitenformular__form .startseitenformular__form__slider-wrapper img#slider-img {
         width: 50%;
         margin-bottom: 100px; }
