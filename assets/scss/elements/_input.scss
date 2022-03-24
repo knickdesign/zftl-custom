@@ -26,3 +26,15 @@
         border-bottom: 3px solid $color-turquoise;
     }
 }
+
+.jet-form-builder__form-wrapper {
+    @media screen and (max-width: $breakpoint-ml-width) {
+        .wp-block-columns {
+            flex-direction: column;
+            .wp-block-column {
+                margin-left: 0!important;
+                ;
+            }
+        }
+    }
+}

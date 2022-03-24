@@ -1,1 +1,19 @@
-.contact-form-wrapper {}
+.three-steps-container {
+    .wp-block-group__inner-container {
+        padding: 0;
+    }
+    @media screen and (max-width: $breakpoint-m-width) {
+        flex-direction: column;
+        gap: 30px;
+        .wp-block-column {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-left: 0!important;
+            * {
+                flex: 1 1 50%;
+                text-align: left;
+            }
+        }
+    }
+}

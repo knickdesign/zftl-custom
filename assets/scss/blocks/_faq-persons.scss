@@ -1,6 +1,11 @@
 .faq-persons {
     align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: $breakpoint-m-width) {
+        flex-direction: column;
+    }
     .faq-persons__txt-wrapper {
+        max-width: 700px;
         .btn {
             margin-top: 50px;
         }
@@ -26,6 +31,9 @@
                 font-weight: 300;
                 margin-top: 8px;
             }
+        }
+        @media screen and (max-width: $breakpoint-m-width) {
+            margin-top: 80px;
         }
     }
 }

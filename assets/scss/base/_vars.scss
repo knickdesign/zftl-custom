@@ -1,7 +1,8 @@
 // break points
-$breakpoint-s-width: 375px;
+$breakpoint-s-width: 340px;
 $breakpoint-sm-width: 560px;
-$breakpoint-m-width: 780px;
+$breakpoint-m-width: 800px;
+$breakpoint-ml-width: 1024px;
 $breakpoint-l-width: 1200px;
 $breakpoint-lxl-width: 1400px;
 $breakpoint-xl-width: 1920px;
@@ -57,8 +58,8 @@ $meta-text-font-size-max: 22px;
 $meta-text-line-height-max: 24px;
 $meta-text-font-size-diff: $meta-text-font-size-max - $meta-text-font-size;
 $meta-text-line-height-diff: $meta-text-line-height-max - $meta-text-line-height;
-$super-text-font-size: 60px;
-$super-text-line-height: 80px;
+$super-text-font-size: 50px;
+$super-text-line-height: 65px;
 $super-text-font-size-max: 90px;
 $super-text-line-height-max: 120px;
 $super-text-font-size-diff: $super-text-font-size-max - $super-text-font-size;

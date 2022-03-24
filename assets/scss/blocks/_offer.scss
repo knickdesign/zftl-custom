@@ -22,6 +22,9 @@
         .offers__offer__body {
             align-items: stretch;
             z-index: 4;
+            @media screen and (max-width: $breakpoint-m-width) {
+                flex-direction: column;
+            }
             .offers__offer__body__img-wrapper {
                 margin-right: 10px;
                 position: relative;
@@ -32,6 +35,9 @@
                     height: 23vw;
                     object-fit: cover;
                     object-position: 50% 50%;
+                    @media screen and (max-width: $breakpoint-m-width) {
+                        height: 40vw;
+                    }
                 }
             }
             .offers__offer__body__text-wrapper {
@@ -39,6 +45,9 @@
                 justify-content: space-between;
                 flex-wrap: wrap;
                 flex: 0 1 50%;
+                @media screen and (max-width: $breakpoint-m-width) {
+                    margin-left: 0;
+                }
                 .offers__offer__body__text-wrapper__tags {
                     display: flex;
                     flex-wrap: wrap;

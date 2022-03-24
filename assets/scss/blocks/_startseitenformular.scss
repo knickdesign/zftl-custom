@@ -20,11 +20,14 @@
             margin-top: 60px;
             margin-bottom: 150px;
             gap: 32px;
-            @media screen and (max-width: $breakpoint-sm-width) {
+            @media screen and (max-width: $breakpoint-ml-width) {
                 display: block;
-                .startseitenformular__form__button-wrapper__button__inner {
+                .startseitenformular__form__button-wrapper__button {
+                    display: block;
+                    width: 50%;
+                    margin: 0 auto;
                     margin-bottom: 30px;
-                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                    min-width: 320px;
                 }
             }
             .startseitenformular__form__button-wrapper__button {
@@ -72,7 +75,7 @@
             display: flex;
             align-items: center;
             gap: 50px;
-            @media screen and (max-width: $breakpoint-sm-width) {
+            @media screen and (max-width: $breakpoint-ml-width) {
                 display: block;
             }
         }
@@ -87,9 +90,19 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            @media screen and (max-width: $breakpoint-ml-width) {
+                width: 50%;
+                padding: 20px 0;
+                margin: 0 auto;
+                margin-top: 60px;
+                margin-bottom: 150px;
+            }
             @media screen and (max-width: $breakpoint-sm-width) {
                 width: 100%;
                 padding: 20px 0;
+            }
+            @media screen and (max-width: $breakpoint-s-width) {
+                min-width: 200px;
             }
             img#slider-img {
                 width: 50%;
@@ -128,9 +141,15 @@
             color: white;
             margin-top: 150px;
             margin-bottom: 300px;
+            @media screen and (max-width: $breakpoint-m-width) {
+                flex-direction: column;
+            }
             &--inner {
                 flex: 1 1 50%;
                 gap: 50px;
+                &:last-child {
+                    margin-top: 50px;
+                }
             }
             .startseitenformular__response__chancen-und-risiken__list {
                 color: white;

@@ -1,17 +1,31 @@
 .team__mitglied {
     margin-bottom: 250px;
+    @media screen and (max-width: $breakpoint-m-width) {
+        margin-bottom: 100px;
+    }
     >.flex {
         flex: 1 1 0%;
+        @media screen and (max-width: $breakpoint-m-width) {
+            flex-direction: column!important;
+        }
     }
     .team__mitglied__txt-wrapper,
     .team__mitglied__img-wrapper {
         width: 50%;
+        @media screen and (max-width: $breakpoint-m-width) {
+            width: 100%;
+            margin: 0;
+            margin-top: 30px;
+        }
     }
     .team__mitglied__img-wrapper {
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         justify-content: flex-end;
+        @media screen and (max-width: $breakpoint-l-width) {
+            max-height: 200px;
+        }
         .team__mitglied__img-wrapper__txt {
             width: 50%;
             height: fit-content;
@@ -20,6 +34,11 @@
             align-self: center;
             p:last-child {
                 margin-top: 32px;
+            }
+            @media screen and (max-width: $breakpoint-m-width) {
+                * {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -30,6 +49,11 @@
         margin-top: 16px;
         display: flex;
         flex-wrap: wrap;
+        width: auto;
+        @media screen and (max-width: $breakpoint-m-width) {
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+        }
         p.team__mitglied__tags-wrapper__tag {
             text-transform: none;
             font-size: 16px;
@@ -50,9 +74,15 @@
     }
     .team__mitglied__img-wrapper {
         margin-left: 16px;
+        @media screen and (max-width: $breakpoint-m-width) {
+            margin-left: 0;
+        }
     }
     .team__mitglied__txt-wrapper {
         margin-right: 16px;
+        @media screen and (max-width: $breakpoint-m-width) {
+            margin-right: 0;
+        }
     }
     .team__mitglied__tags-wrapper {
         justify-content: flex-end;
@@ -60,14 +90,23 @@
             margin-left: 16px;
             margin-right: 0;
         }
+        @media screen and (max-width: $breakpoint-m-width) {
+            justify-content: flex-start;
+        }
     }
 }
 
 .team__mitglied:nth-child(odd) {
     .team__mitglied__img-wrapper {
         margin-right: 16px;
+        @media screen and (max-width: $breakpoint-m-width) {
+            margin-right: 0;
+        }
     }
     .team__mitglied__txt-wrapper {
         margin-left: 16px;
+        @media screen and (max-width: $breakpoint-m-width) {
+            margin-left: 0;
+        }
     }
 }

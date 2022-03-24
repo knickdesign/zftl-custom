@@ -30,11 +30,6 @@ $img_two = $attributes['faq_person_two_img'];
         <p class="faq-persons__persons-wrapper__person__name"><?php echo $name_one; ?></p>
         <p class="faq-persons__persons-wrapper__person__job"><?php echo $job_one; ?></p>
     </div>
-    <div class="faq-persons__persons-wrapper__person">
-        <img class="faq-persons__persons-wrapper__person__img" src="<?php echo $img_two['url']; ?>">
-        <p class="faq-persons__persons-wrapper__person__name"><?php echo $name_two; ?></p>
-        <p class="faq-persons__persons-wrapper__person__job"><?php echo $job_two; ?></p>
-    </div>
     </div>
 </div>
 
