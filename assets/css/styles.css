@@ -377,6 +377,12 @@ h3,
     .h3 {
       font-size: 30px;
       line-height: 40px; } }
+  h3::before,
+  .h3::before {
+    content: '»';
+    color: #EE907D;
+    padding-right: 10px;
+    font-weight: bold; }
 
 h4,
 .h4,

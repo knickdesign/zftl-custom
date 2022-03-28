@@ -25,6 +25,11 @@ add_filter('generate_do_template_part', function ($do) {
     return $do;
 });
 
+function my_custom_scripts() {
+    wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ),'',true );
+}
+add_action( 'wp_enqueue_scripts', 'my_custom_scripts' );
+
 // Add our own.
 add_action('generate_before_do_template_part', function () {
     if (is_page('team')) : ?>
@@ -73,6 +78,7 @@ function misha_filter_function()
         $chancen = $texts[$result['problem']]['leidensdruck'][$result['leidensdruck']]['chancen'];
         $risiken = $texts[$result['problem']]['leidensdruck'][$result['leidensdruck']]['risiken'];
         $slug = $texts[$result['problem']]['leidensdruck'][$result['leidensdruck']]['training'];
+        if($chancen){
         ?>
         <div class="startseitenformular__response__chancen-und-risiken flex inner-container--small">
         <div class="startseitenformular__response__chancen-und-risiken--inner">
@@ -92,6 +98,12 @@ function misha_filter_function()
             </ul>
             </div>
         </div>
+        <?php
+        }
+        else{
+            echo '<br /><br /><p>Bitte füllen Sie das Formular komplett aus.</p><br /><br />';
+        }
+        ?>
         <h2 class="font-white">Unsere Angebote, die zu Ihnen passen</h2>
         <?php
         $mitgliedschaft_query = new WP_Query(
@@ -119,7 +131,9 @@ function misha_filter_function()
         $custom_query = new WP_Query(
             array(
                 'name'   => $slug,
-                'post_type'   => 'training_und_kurse'
+                'post_type'   => 'training_und_kurse',
+                'numberposts' => 1,
+                'posts_per_page' => 1
             )
         );
         ?>

@@ -49,6 +49,12 @@ h3,
     @include text-h3;
     margin-bottom: $spacing2;
     color: $color-blue-dark;
+    &::before {
+        content: '»';
+        color: $color-coral;
+        padding-right: 10px;
+        font-weight: bold;
+    }
 }
 
 h4,
