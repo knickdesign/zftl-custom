@@ -143,13 +143,15 @@
             margin-bottom: 300px;
             @media screen and (max-width: $breakpoint-m-width) {
                 flex-direction: column;
+                &--inner {
+                    &:last-child {
+                        margin-top: 50px;
+                    }
+                }
             }
             &--inner {
                 flex: 1 1 50%;
                 gap: 50px;
-                &:last-child {
-                    margin-top: 50px;
-                }
             }
             .startseitenformular__response__chancen-und-risiken__list {
                 color: white;

@@ -1391,12 +1391,12 @@ button,
     margin-bottom: 300px; }
     @media screen and (max-width: 800px) {
       .startseitenformular .startseitenformular__response .startseitenformular__response__chancen-und-risiken {
-        flex-direction: column; } }
+        flex-direction: column; }
+        .startseitenformular .startseitenformular__response .startseitenformular__response__chancen-und-risiken--inner:last-child {
+          margin-top: 50px; } }
     .startseitenformular .startseitenformular__response .startseitenformular__response__chancen-und-risiken--inner {
       flex: 1 1 50%;
       gap: 50px; }
-      .startseitenformular .startseitenformular__response .startseitenformular__response__chancen-und-risiken--inner:last-child {
-        margin-top: 50px; }
     .startseitenformular .startseitenformular__response .startseitenformular__response__chancen-und-risiken .startseitenformular__response__chancen-und-risiken__list {
       color: white; }
       .startseitenformular .startseitenformular__response .startseitenformular__response__chancen-und-risiken .startseitenformular__response__chancen-und-risiken__list li {
