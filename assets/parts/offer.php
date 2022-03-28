@@ -23,7 +23,7 @@
                                 <?php endforeach; ?>
                                 </div>
                             <?php endif; ?>
-                            <a href="#" class="link--booking">Termin anfragen</a>
+                            <a href="<?php echo get_home_url() ?>/kontakt" class="link--booking">Termin anfragen</a>
                     </div>
                 </div>
 

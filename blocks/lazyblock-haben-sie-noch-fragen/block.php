@@ -22,7 +22,7 @@ $img_two = $attributes['faq_person_two_img'];
 <div class="faq-persons flex">
     <div class="faq-persons__txt-wrapper">
         <h3>Ihre Ansprechpartner:innen freuen sich über Ihre Nachricht.</h3>
-        <a class="btn text-blue-dark" href="#">Schreiben Sie uns</a>
+        <a class="btn text-blue-dark" href="<?php echo get_home_url() ?>/kontakt">Schreiben Sie uns</a>
     </div>
     <div class="faq-persons__persons-wrapper flex">
     <div class="faq-persons__persons-wrapper__person">
