@@ -63,6 +63,9 @@ function misha_filter_function()
         ),
     );
     ?>
+    <div class="pulsing-arrow__wrapper">
+        <img src="<?php echo get_stylesheet_directory_uri() . "/assets/img/arrow-down.svg"?>">
+    </div>
     <div class="banner-background--blue">
     <div class="swoosh swoosh--white-green-blue">
         <img class="swoosh__img" src="<?php echo get_stylesheet_directory_uri() . "/assets/img/zftpl_hintergrunde/zftl-schwung_unten_weiss.svg"?>">

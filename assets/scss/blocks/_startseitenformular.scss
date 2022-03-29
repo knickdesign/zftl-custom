@@ -161,4 +161,15 @@
             }
         }
     }
+    .pulsing-arrow__wrapper {
+        display: flex;
+        animation-name: arrow-down-hover;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 30px;
+        }
+    }
 }

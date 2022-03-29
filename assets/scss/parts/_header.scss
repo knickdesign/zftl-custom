@@ -166,4 +166,10 @@ header.site-header {
 #home-logo {
     max-width: 30%;
     margin: 50px auto;
+    @media screen and (max-width: $breakpoint-m-width) {
+        max-width: 50%;
+    }
+    @media screen and (max-width: $breakpoint-sm-width) {
+        max-width: 70%;
+    }
 }
