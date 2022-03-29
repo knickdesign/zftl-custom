@@ -1170,8 +1170,11 @@ button,
         margin-left: 10%;
         justify-content: space-between;
         flex-wrap: wrap;
-        flex: 0 1 50%;
-        color: white; }
+        flex: 0 1 50%; }
+        .offers .offers__offer .offers__offer__body .offers__offer__body__text-wrapper p,
+        .offers .offers__offer .offers__offer__body .offers__offer__body__text-wrapper li,
+        .offers .offers__offer .offers__offer__body .offers__offer__body__text-wrapper span {
+          color: white; }
         @media screen and (max-width: 800px) {
           .offers .offers__offer .offers__offer__body .offers__offer__body__text-wrapper {
             margin-left: 0; } }
