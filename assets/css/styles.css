@@ -676,7 +676,7 @@ body.menu-open {
       padding-right: 16px; } }
 
 .site-footer #footer-widgets::before {
-  content: url("../img/zftpl_hintergrunde/blau_gruen_weiß_v5.svg"); }
+  content: url("../img/zftpl_hintergrunde/zftl-schwung_unten_weiss.svg"); }
 
 .site-footer ul.menu {
   padding-left: 0; }
@@ -1241,12 +1241,11 @@ button,
         .shop-links .shop-links__wrapper__link-wrapper .shop-links__wrapper__link-wrapper__link {
           max-width: calc( 50% - 8px); } }
       .shop-links .shop-links__wrapper__link-wrapper .shop-links__wrapper__link-wrapper__link .shop-links__wrapper__link-wrapper__link__txt-wrapper {
-        max-width: 50%;
         padding: 10px;
-        flex: 0 1 50%;
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
-        hyphens: auto; }
+        hyphens: auto;
+        max-width: 100%; }
         @media screen and (max-width: 1400px) {
           .shop-links .shop-links__wrapper__link-wrapper .shop-links__wrapper__link-wrapper__link .shop-links__wrapper__link-wrapper__link__txt-wrapper {
             flex: 0 1 100%;
@@ -1256,17 +1255,6 @@ button,
         .shop-links .shop-links__wrapper__link-wrapper .shop-links__wrapper__link-wrapper__link .shop-links__wrapper__link-wrapper__link__txt-wrapper svg,
         .shop-links .shop-links__wrapper__link-wrapper .shop-links__wrapper__link-wrapper__link .shop-links__wrapper__link-wrapper__link__txt-wrapper svg * {
           fill: #1D3753; }
-      .shop-links .shop-links__wrapper__link-wrapper .shop-links__wrapper__link-wrapper__link .shop-links__wrapper__link-wrapper__link__img-wrapper {
-        flex: 0 1 50%; }
-        @media screen and (max-width: 1400px) {
-          .shop-links .shop-links__wrapper__link-wrapper .shop-links__wrapper__link-wrapper__link .shop-links__wrapper__link-wrapper__link__img-wrapper {
-            display: none; } }
-        .shop-links .shop-links__wrapper__link-wrapper .shop-links__wrapper__link-wrapper__link .shop-links__wrapper__link-wrapper__link__img-wrapper img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: 50% 50%;
-          border-radius: 13px; }
 
 .startseitenformular {
   margin-top: 150px; }

@@ -35,12 +35,11 @@
                 max-width: calc( 50% - 8px);
             }
             .shop-links__wrapper__link-wrapper__link__txt-wrapper {
-                max-width: 50%;
                 padding: 10px;
-                flex: 0 1 50%;
                 -webkit-hyphens: auto;
                 -ms-hyphens: auto;
                 hyphens: auto;
+                max-width: 100%;
                 @media screen and (max-width: $breakpoint-lxl-width) {
                     flex: 0 1 100%;
                     max-width: 100%;
@@ -51,19 +50,6 @@
                 svg,
                 svg * {
                     fill: $color-blue-dark;
-                }
-            }
-            .shop-links__wrapper__link-wrapper__link__img-wrapper {
-                @media screen and (max-width: $breakpoint-lxl-width) {
-                    display: none;
-                }
-                flex: 0 1 50%;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: 50% 50%;
-                    border-radius: 13px;
                 }
             }
         }

@@ -20,8 +20,12 @@
                     <svg>
                         <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
                 </div>
-                <div class="shop-links__wrapper__link-wrapper__link__img-wrapper">
-                    <img src="<?php echo (get_stylesheet_directory_uri() . "/assets/img/shop-prev.jpg"); ?>">
+            </div>
+            <div class="shop-links__wrapper__link-wrapper__link flex">
+                <div class="shop-links__wrapper__link-wrapper__link__txt-wrapper">
+                    <h4>Dienstleistungen vor Ort</h4>
+                    <svg>
+                        <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
                 </div>
             </div>
             <div class="shop-links__wrapper__link-wrapper__link flex">
@@ -30,8 +34,12 @@
                     <svg>
                         <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
                 </div>
-                <div class="shop-links__wrapper__link-wrapper__link__img-wrapper">
-                    <img src="<?php echo (get_stylesheet_directory_uri() . "/assets/img/shop-prev.jpg"); ?>">
+            </div>
+            <div class="shop-links__wrapper__link-wrapper__link flex">
+                <div class="shop-links__wrapper__link-wrapper__link__txt-wrapper">
+                    <h4>Dienstleistungen vor Ort</h4>
+                    <svg>
+                        <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
                 </div>
             </div>
             <div class="shop-links__wrapper__link-wrapper__link flex">
@@ -40,38 +48,12 @@
                     <svg>
                         <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
                 </div>
-                <div class="shop-links__wrapper__link-wrapper__link__img-wrapper">
-                    <img src="<?php echo (get_stylesheet_directory_uri() . "/assets/img/shop-prev.jpg"); ?>">
-                </div>
             </div>
             <div class="shop-links__wrapper__link-wrapper__link flex">
                 <div class="shop-links__wrapper__link-wrapper__link__txt-wrapper">
                     <h4>Dienstleistungen vor Ort</h4>
                     <svg>
                         <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
-                </div>
-                <div class="shop-links__wrapper__link-wrapper__link__img-wrapper">
-                    <img src="<?php echo (get_stylesheet_directory_uri() . "/assets/img/shop-prev.jpg"); ?>">
-                </div>
-            </div>
-            <div class="shop-links__wrapper__link-wrapper__link flex">
-                <div class="shop-links__wrapper__link-wrapper__link__txt-wrapper">
-                    <h4>Dienstleistungen vor Ort</h4>
-                    <svg>
-                        <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
-                </div>
-                <div class="shop-links__wrapper__link-wrapper__link__img-wrapper">
-                    <img src="<?php echo (get_stylesheet_directory_uri() . "/assets/img/shop-prev.jpg"); ?>">
-                </div>
-            </div>
-            <div class="shop-links__wrapper__link-wrapper__link flex">
-                <div class="shop-links__wrapper__link-wrapper__link__txt-wrapper">
-                    <h4>Dienstleistungen vor Ort</h4>
-                    <svg>
-                        <?php echo file_get_contents(get_stylesheet_directory() . "/assets/img/arrow.svg"); ?></svg>
-                </div>
-                <div class="shop-links__wrapper__link-wrapper__link__img-wrapper">
-                    <img src="<?php echo (get_stylesheet_directory_uri() . "/assets/img/shop-prev.jpg"); ?>">
                 </div>
             </div>
         </div>
