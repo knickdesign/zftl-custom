@@ -14,9 +14,6 @@
 $name_one = $attributes['faq_person_one_name'];
 $job_one = $attributes['faq_person_one_job'];
 $img_one = $attributes['faq_person_one_img'];
-$name_two = $attributes['faq_person_two_name'];
-$job_two = $attributes['faq_person_two_job'];
-$img_two = $attributes['faq_person_two_img'];
 ?>
 
 <div class="faq-persons flex">

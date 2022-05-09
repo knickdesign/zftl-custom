@@ -62,19 +62,19 @@
                 console.log(output);
                 if(output == 0){
                     slider_img.src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/zftl-zeitbubble04.svg";
-                    console.log("little success");
+                    
                 }
                 else if(output == 1){
                     slider_img.src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/zftl-zeitbubble03.svg";
-                    console.log("little success");
+                   
                 }
                 else if(output == 2){
                     slider_img.src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/zftl-zeitbubble02.svg";
-                    console.log("little success");
+                  
                 }
                 else if(output == 3){
                     slider_img.src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/zftl-zeitbubble01.svg";
-                    console.log("little success");
+                 
                 }
             }
         </script>
@@ -96,7 +96,7 @@
                 <input type="radio" name="leidensdruck" value="mittelmassig" />
                 <div class="startseitenformular__form__button-wrapper__button__inner">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/illustrations/zftl-leidensdruck02.svg">
-                    <h4>Mittelmäßig</h4>
+                    <h4>Mittel&shy;mäßig</h4>
                     <div class="startseitenformular__form__button-wrapper__button__inner__checkcircle"></div>
                 </div>
             </label>

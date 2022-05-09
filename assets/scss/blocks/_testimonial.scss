@@ -1,28 +1,12 @@
 .testimonial {
     margin-bottom: 200px;
     margin-top: 150px;
-    .testimonial__txt-wrapper {
-        z-index: 5;
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        .testimonial__txt-wrapper__inner {
-            width: 50%;
-        }
-    }
-    .testimonial__img-wrapper {
-        margin-top: 10%;
-        width: 100%;
-        .testimonial__img-wrapper__inner {
-            width: 50%;
-            margin-left: 10%;
-            margin-top: -20%;
-        }
-    }
+    gap: 50px;
+    align-items: center;
     @media screen and (max-width: $breakpoint-m-width) {
         margin-bottom: 150px;
         margin-top: 100px;
+        display: block;
         .testimonial__txt-wrapper {
             z-index: 5;
             position: relative;

@@ -1094,26 +1094,14 @@ button,
 
 .testimonial {
   margin-bottom: 200px;
-  margin-top: 150px; }
-  .testimonial .testimonial__txt-wrapper {
-    z-index: 5;
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; }
-    .testimonial .testimonial__txt-wrapper .testimonial__txt-wrapper__inner {
-      width: 50%; }
-  .testimonial .testimonial__img-wrapper {
-    margin-top: 10%;
-    width: 100%; }
-    .testimonial .testimonial__img-wrapper .testimonial__img-wrapper__inner {
-      width: 50%;
-      margin-left: 10%;
-      margin-top: -20%; }
+  margin-top: 150px;
+  gap: 50px;
+  align-items: center; }
   @media screen and (max-width: 800px) {
     .testimonial {
       margin-bottom: 150px;
-      margin-top: 100px; }
+      margin-top: 100px;
+      display: block; }
       .testimonial .testimonial__txt-wrapper {
         z-index: 5;
         position: relative;
@@ -1139,7 +1127,7 @@ button,
     .offers .offers__offer .offers__offer__head p,
     .offers .offers__offer .offers__offer__head h4 {
       z-index: 2;
-      color: #1D3753;
+      color: white;
       position: relative;
       margin-bottom: 5px; }
     .offers .offers__offer .offers__offer__head .offers__offer__head__img {
@@ -1318,7 +1306,7 @@ button,
           object-position: 100% 100%; }
         .startseitenformular .startseitenformular__form .startseitenformular__form__button-wrapper .startseitenformular__form__button-wrapper__button .startseitenformular__form__button-wrapper__button__inner h4 {
           position: absolute;
-          max-width: 30%;
+          max-width: 40%;
           z-index: 4;
           top: 20px;
           left: 20px; }
@@ -1417,3 +1405,34 @@ button,
     margin-bottom: 80px; }
     .startseitenformular .pulsing-arrow__wrapper img {
       max-width: 30px; }
+
+.termin-wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .termin-wrapper .termin-wrapper__wrapper__link-wrapper__link {
+    max-width: 790px;
+    margin: 0 auto;
+    background-color: #8BC0B6;
+    border-radius: 20px; }
+    .termin-wrapper .termin-wrapper__wrapper__link-wrapper__link .termin-wrapper__wrapper__link-wrapper__link__txt-wrapper,
+    .termin-wrapper .termin-wrapper__wrapper__link-wrapper__link .termin-wrapper__wrapper__link-wrapper__link__img-wrapper {
+      flex: 1 1 50%;
+      color: white; }
+    .termin-wrapper .termin-wrapper__wrapper__link-wrapper__link .termin-wrapper__wrapper__link-wrapper__link__img-wrapper img {
+      border-radius: 0 20px 20px 0; }
+    .termin-wrapper .termin-wrapper__wrapper__link-wrapper__link .termin-wrapper__wrapper__link-wrapper__link__txt-wrapper {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .termin-wrapper .termin-wrapper__wrapper__link-wrapper__link .termin-wrapper__wrapper__link-wrapper__link__txt-wrapper * {
+        color: white; }
+    .termin-wrapper .termin-wrapper__wrapper__link-wrapper__link svg {
+      fill: #1D3753; }
+      .termin-wrapper .termin-wrapper__wrapper__link-wrapper__link svg path {
+        fill: #1D3753; }
+  @media screen and (max-width: 800px) {
+    .termin-wrapper .termin-wrapper__wrapper__link-wrapper__link {
+      display: block; }
+      .termin-wrapper .termin-wrapper__wrapper__link-wrapper__link .termin-wrapper__wrapper__link-wrapper__link__img-wrapper {
+        display: none; } }

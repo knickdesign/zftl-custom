@@ -5,7 +5,6 @@
             ?>
             <div class="offers__offer">
                 <div class="offers__offer__head">
-                    <img class="offers__offer__head__img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/background-offer.png">
                     <p><?php echo $type; ?></p>
                     <h4 class="headline-offer"><?php the_title(); ?></h4>
                 </div>

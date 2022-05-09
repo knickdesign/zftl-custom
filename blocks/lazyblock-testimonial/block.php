@@ -14,16 +14,16 @@ $testimonial_image = $attributes['testimonial-img'];
 $testimonial_image_url = $testimonial_image['url'];
 ?>
 
-<div class="testimonial">
+<div class="testimonial flex">
+<div class="testimonial__img-wrapper">
+    <div class="testimonial__img-wrapper__inner">
+    <img class="" src="<?php echo $testimonial_image_url ?>">
+    </div>
+    </div>
     <div class="testimonial__txt-wrapper">
     <div class="testimonial__txt-wrapper__inner">
     <p><?php echo ( $attributes['testimonial-name'] ); ?> berichtet begeistert:<p>
-    <h2 class="text-super"><?php echo ( $attributes['testimonial-quote'] ); ?></h2>
-    </div>
-    </div>
-    <div class="testimonial__img-wrapper">
-    <div class="testimonial__img-wrapper__inner">
-    <img class="" src="<?php echo $testimonial_image_url ?>">
+    <h2><?php echo ( $attributes['testimonial-quote'] ); ?></h2>
     </div>
     </div>
 </div>
