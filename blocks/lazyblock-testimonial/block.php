@@ -14,7 +14,7 @@ $testimonial_image = $attributes['testimonial-img'];
 $testimonial_image_url = $testimonial_image['url'];
 ?>
 
-<div class="testimonial flex">
+<div class="testimonial flex inner-container--small">
 <div class="testimonial__img-wrapper">
     <div class="testimonial__img-wrapper__inner">
     <img class="" src="<?php echo $testimonial_image_url ?>">
