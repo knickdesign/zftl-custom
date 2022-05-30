@@ -23,6 +23,7 @@
         background-size: cover;
         display: flex;
         justify-content: flex-end;
+        background-position: 50% 0%;
         @media screen and (max-width: $breakpoint-l-width) {
             max-height: 200px;
         }

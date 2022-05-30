@@ -5,7 +5,7 @@
 
 		<div class="team__mitglied inner-container--medium">
 			<div class="flex">
-				<div class="team__mitglied__img-wrapper" style="background-image: url(<?php echo get_the_post_thumbnail_url();?>); background-position: 50%">
+				<div class="team__mitglied__img-wrapper" style="background-image: url(<?php echo get_the_post_thumbnail_url();?>);">
 					<div class="team__mitglied__img-wrapper__txt">
 						<p class="team-title"><?php the_title(); ?>
 						<p>

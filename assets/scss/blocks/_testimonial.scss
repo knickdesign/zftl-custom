@@ -3,6 +3,9 @@
     margin-top: 150px;
     gap: 50px;
     align-items: center;
+    div {
+        flex: 1 1 50%
+    }
     @media screen and (max-width: $breakpoint-m-width) {
         margin-bottom: 150px;
         margin-top: 100px;
@@ -19,7 +22,7 @@
         }
         .testimonial__img-wrapper {
             margin-top: 10%;
-            width: 100%;
+            max-width: 50%;
             .testimonial__img-wrapper__inner {
                 width: 100%;
                 margin-left: 0;
